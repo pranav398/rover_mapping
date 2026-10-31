@@ -1,0 +1,3 @@
+float32 battery
+int32 x
+int32 y

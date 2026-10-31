@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msgs/srv/Battery_Request",
+      "fields": [
+        {
+          "name": "deduction",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msgs/srv/Battery_Request",
+      "hash_string": "RIHS01_6af9b192949991d14e41ad40bb46183728caeaee6c1f1ec9fcb5296ebca6ef41"
+    }
+  ]
+}

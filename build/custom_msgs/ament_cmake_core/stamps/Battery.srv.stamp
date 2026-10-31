@@ -1,0 +1,4 @@
+int32 deduction
+---
+bool accepted
+string reason

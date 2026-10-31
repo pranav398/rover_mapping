@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/Battery.srv
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module srv {
+    struct Battery_Request {
+      int32 deduction;
+    };
+    struct Battery_Response {
+      boolean accepted;
+
+      string reason;
+    };
+  };
+};

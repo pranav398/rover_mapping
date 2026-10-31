@@ -17,5 +17,6 @@ test/test_mypy.py
 test/test_pep257.py
 test/test_xmllint.py
 world_map/__init__.py
+world_map/battery_node.py
 world_map/map_node.py
 world_map/py.typed

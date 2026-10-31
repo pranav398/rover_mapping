@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/cmake_install.cmake",
+		"/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/cmake_install.cmake",
+		"/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__rs/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

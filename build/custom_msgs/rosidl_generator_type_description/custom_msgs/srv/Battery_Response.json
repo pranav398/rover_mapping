@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msgs/srv/Battery_Response",
+      "fields": [
+        {
+          "name": "accepted",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "reason",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msgs/srv/Battery_Response",
+      "hash_string": "RIHS01_fac2a310b5f540491c007aecc02c3db45d44f666f4df97cd453e9febb15ba2b4"
+    }
+  ]
+}

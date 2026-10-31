@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 9
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "custom_msgs__rs",
+		"source" : "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__rs"
+	}
+}

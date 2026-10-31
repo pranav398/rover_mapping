@@ -1,0 +1,7 @@
+{
+  "package_name": "custom_msgs",
+  "non_idl_tuples": [
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs:msg/Info.msg",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs:srv/Battery.srv"
+  ]
+}
