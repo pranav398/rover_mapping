@@ -40,6 +40,7 @@ class MapNode(Node):
         self.battery_client = self.create_client(Battery, '/rover/update_battery', callback_group=ReentrantCallbackGroup(),)
         self.fov_publisher = self.create_publisher(Fov, '/rover/fov', 10)
         self.fov_timer = self.create_timer(0.5, self.publishFov)
+        self.gui_timer = self.create_timer(0.05, self.processGuiEvents)
 
         # self.printMap(self.length, self.width)
         self.visualizeMap()
@@ -56,7 +57,6 @@ class MapNode(Node):
         center_x = (length - 1) / 2
         center_y = (width - 1) / 2
 
-        # Initialize center
         cx = round(center_x)
         cy = round(center_y)
         self.map[cx][cy] = 0.0
@@ -90,7 +90,6 @@ class MapNode(Node):
                 avg = 0.0
 
             random_value = random.uniform(-noise, noise)
-
             self.map[i][j] = influence * avg + random_value
 
         for i in range(length):
@@ -193,6 +192,9 @@ class MapNode(Node):
     def updateRoverMarker(self):
         self.rover_marker.set_data([self.rover.y], [self.rover.x])
         self.map_figure.canvas.draw_idle()
+
+    def processGuiEvents(self):
+        plt.pause(0.001)
 
     async def move(self, request, response):
         if not self.battery_client.wait_for_service(timeout_sec=1.0):

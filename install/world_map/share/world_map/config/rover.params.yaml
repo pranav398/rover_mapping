@@ -1,11 +1,1 @@
-map_node:
-  ros__parameters:
-    length: 100
-    width: 100
-    spawn_x: 0
-    spawn_y: 0
-    fov: 5
-
-battery_node:
-  ros__parameters:
-    max_battery: 100
+/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/config/rover.params.yaml

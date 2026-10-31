@@ -1,0 +1,208 @@
+[0.015s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs
+[0.031s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.118s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.123s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[0.124s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.136s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.148s] -- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[0.149s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[0.467s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.588s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.924s] -- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter Development NumPy Development.Module Development.Embed
+[0.955s] -- Found Python3: /usr/bin/python3 (found version "3.14.4") found components: Interpreter
+[0.958s] -- Found ament_lint_auto: 0.20.6 (/opt/ros/lyrical/share/ament_lint_auto/cmake)
+[0.970s] -- Added test 'lint_cmake' to check CMake code style
+[0.971s] -- Added test 'xmllint' to check XML markup files
+[0.973s] -- Configuring done (0.9s)
+[1.020s] -- Generating done (0.0s)
+[1.037s] -- Build files have been written to: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs
+[1.044s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs
+[1.045s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake --build /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs -- -j12 -l12
+[1.112s] [  3%] Built target custom_msgs__rs
+[1.112s] [  3%] Built target custom_msgs__rosidl_generator_type_description
+[1.135s] [  4%] Built target custom_msgs__cpp
+[1.146s] [ 26%] Built target custom_msgs__rosidl_generator_c
+[1.174s] [ 35%] Built target custom_msgs__rosidl_typesupport_introspection_c
+[1.174s] [ 44%] Built target custom_msgs__rosidl_typesupport_introspection_cpp
+[1.175s] [ 53%] Built target custom_msgs__rosidl_typesupport_c
+[1.187s] [ 63%] Built target custom_msgs__rosidl_typesupport_cpp
+[1.196s] [ 72%] Built target custom_msgs__rosidl_typesupport_fastrtps_c
+[1.235s] [ 81%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp
+[1.257s] [ 81%] Built target custom_msgs
+[1.282s] [ 83%] Built target custom_msgs__py
+[1.313s] [ 83%] Built target ament_cmake_python_sync_custom_msgs
+[1.318s] [ 90%] Built target custom_msgs__rosidl_generator_py
+[1.343s] [ 93%] Built target custom_msgs_s__rosidl_typesupport_introspection_c
+[1.343s] [ 96%] Built target custom_msgs_s__rosidl_typesupport_c
+[1.343s] [100%] Built target custom_msgs_s__rosidl_typesupport_fastrtps_c
+[1.454s] running egg_info
+[1.463s] writing custom_msgs.egg-info/PKG-INFO
+[1.463s] writing dependency_links to custom_msgs.egg-info/dependency_links.txt
+[1.463s] writing top-level names to custom_msgs.egg-info/top_level.txt
+[1.505s] reading manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[1.508s] writing manifest file 'custom_msgs.egg-info/SOURCES.txt'
+[1.574s] [100%] Built target ament_cmake_python_build_custom_msgs_egg
+[1.588s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake --build /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs -- -j12 -l12
+[1.597s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake --install /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs
+[1.608s] -- Install configuration: ""
+[1.608s] -- Execute custom install script
+[1.609s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[1.609s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.json
+[1.609s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.json
+[1.610s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.json
+[1.610s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.json
+[1.611s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__functions.h
+[1.611s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__struct.h
+[1.611s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__type_support.h
+[1.611s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__functions.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__struct.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__type_support.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/fov.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/info.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[1.612s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/battery.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__functions.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__struct.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__type_support.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__functions.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__struct.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__type_support.h
+[1.613s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/move.h
+[1.614s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/library_path.sh
+[1.614s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/library_path.dsv
+[1.615s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_fastrtps_c.h
+[1.615s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_fastrtps_c.h
+[1.615s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.615s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_fastrtps_c.h
+[1.615s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_fastrtps_c.h
+[1.616s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_introspection_c.h
+[1.616s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_introspection_c.h
+[1.616s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.616s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_introspection_c.h
+[1.616s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_introspection_c.h
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__builder.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__struct.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__traits.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__type_support.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__builder.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__struct.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__traits.hpp
+[1.617s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__type_support.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/fov.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/info.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/battery.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__builder.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__struct.hpp
+[1.618s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__traits.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__type_support.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__builder.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__struct.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__traits.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__type_support.hpp
+[1.619s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/move.hpp
+[1.620s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_fastrtps_cpp.hpp
+[1.620s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_fastrtps_cpp.hpp
+[1.620s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.620s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_fastrtps_cpp.hpp
+[1.620s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_fastrtps_cpp.hpp
+[1.621s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_introspection_cpp.hpp
+[1.621s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_introspection_cpp.hpp
+[1.621s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_introspection_cpp.hpp
+[1.621s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_introspection_cpp.hpp
+[1.621s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh
+[1.622s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv
+[1.622s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[1.622s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so
+[1.622s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/Cargo.toml
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/build.rs
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/lib.rs
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/msg.rs
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/msg/rmw.rs
+[1.623s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/srv.rs
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/srv/rmw.rs
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.idl
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.idl
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.idl
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.idl
+[1.624s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.msg
+[1.625s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.msg
+[1.625s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.srv
+[1.625s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.srv
+[1.625s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/path.sh
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/path.dsv
+[1.626s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.bash
+[1.627s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.fish
+[1.627s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.sh
+[1.627s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.zsh
+[1.627s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.dsv
+[1.627s] -- Symlinking: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.dsv
+[1.639s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs
+[1.639s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/PKG-INFO
+[1.639s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/SOURCES.txt
+[1.639s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/dependency_links.txt
+[1.639s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/top_level.txt
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/__init__.py
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so
+[1.640s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/__init__.py
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_fov.py
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_fov_s.c
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_info.py
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_info_s.c
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/py.typed
+[1.641s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/__init__.py
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_battery.py
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_battery_s.c
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_move.py
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_move_s.c
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[1.642s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.643s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.643s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.643s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.643s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.643s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.644s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[1.644s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[1.644s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[1.644s] -- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.xml
+[1.644s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so
+[1.645s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[1.645s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[1.645s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so
+[1.646s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[1.646s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[1.646s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[1.647s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so
+[1.647s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[1.647s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.647s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[1.647s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake
+[1.648s] -- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake
+[1.691s] Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs'...
+[1.691s] Compiling '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/__init__.py'...
+[1.691s] Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg'...
+[1.691s] Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv'...
+[1.702s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step:/opt/ros/lyrical /usr/bin/cmake --install /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs

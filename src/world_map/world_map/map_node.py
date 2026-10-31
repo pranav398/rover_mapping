@@ -40,6 +40,7 @@ class MapNode(Node):
         self.battery_client = self.create_client(Battery, '/rover/update_battery', callback_group=ReentrantCallbackGroup(),)
         self.fov_publisher = self.create_publisher(Fov, '/rover/fov', 10)
         self.fov_timer = self.create_timer(0.5, self.publishFov)
+        self.gui_timer = self.create_timer(0.05, self.processGuiEvents)
 
         # self.printMap(self.length, self.width)
         self.visualizeMap()
@@ -158,9 +159,11 @@ class MapNode(Node):
         self.rover_marker, = axes[0, 0].plot(
             self.rover.y,
             self.rover.x,
-            marker='o',
+            marker='*',
             color='black',
-            markersize=6,
+            markersize=12,
+            markeredgecolor='white',
+            markeredgewidth=0.8,
         )
         fig.colorbar(im1, ax=axes[0, 0])
 
@@ -191,6 +194,9 @@ class MapNode(Node):
     def updateRoverMarker(self):
         self.rover_marker.set_data([self.rover.y], [self.rover.x])
         self.map_figure.canvas.draw_idle()
+
+    def processGuiEvents(self):
+        plt.pause(0.001)
 
     async def move(self, request, response):
         if not self.battery_client.wait_for_service(timeout_sec=1.0):
