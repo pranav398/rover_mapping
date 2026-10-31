@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/Move.srv
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module srv {
+    struct Move_Request {
+      int32 delta_x;
+
+      int32 delta_y;
+
+      int32 deduction;
+    };
+    struct Move_Response {
+      boolean accepted;
+
+      string reason;
+    };
+  };
+};

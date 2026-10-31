@@ -1,4 +1,8 @@
+msg/Fov.idl
+msg/Fov.msg
 msg/Info.idl
 msg/Info.msg
 srv/Battery.idl
 srv/Battery.srv
+srv/Move.idl
+srv/Move.srv

@@ -14,5 +14,6 @@ def generate_launch_description():
 
     return LaunchDescription([
         DeclareLaunchArgument('params_file', default_value=default_params, description='Common rover parameters YAML file'),
-        Node(package='world_map', executable='map_node', name='mode_node', parameters=[params_file]),
+        Node(package='world_map', executable='map_node', name='map_node', parameters=[params_file]),
+        Node(package='world_map', executable='battery_node', name='battery_node', parameters=[params_file]),
     ])

@@ -1,0 +1,19 @@
+running develop
+running egg_info
+writing world_map.egg-info/PKG-INFO
+writing dependency_links to world_map.egg-info/dependency_links.txt
+writing entry points to world_map.egg-info/entry_points.txt
+writing requirements to world_map.egg-info/requires.txt
+writing top-level names to world_map.egg-info/top_level.txt
+reading manifest file 'world_map.egg-info/SOURCES.txt'
+writing manifest file 'world_map.egg-info/SOURCES.txt'
+running build_ext
+Creating /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world-map.egg-link (link to .)
+Installing map_node script to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/world_map
+
+Installed /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map
+running symlink_data
+symbolically linking /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/resource/world_map -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/ament_index/resource_index/packages
+symbolically linking /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/package.xml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map
+symbolically linking /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/config/rover.params.yaml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/config
+symbolically linking /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/launch/map.launch.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/launch

@@ -1,12 +1,1 @@
-// generated from rosidl_generator_c/resource/idl.h.em
-// with input from custom_msgs:srv/Battery.idl
-// generated code does not contain a copyright notice
-
-#ifndef CUSTOM_MSGS__SRV__BATTERY_H_
-#define CUSTOM_MSGS__SRV__BATTERY_H_
-
-#include "custom_msgs/srv/detail/battery__struct.h"
-#include "custom_msgs/srv/detail/battery__functions.h"
-#include "custom_msgs/srv/detail/battery__type_support.h"
-
-#endif  // CUSTOM_MSGS__SRV__BATTERY_H_
+/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/battery.h

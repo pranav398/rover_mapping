@@ -30,6 +30,7 @@ setup(
     entry_points={
         'console_scripts': [
             'map_node=world_map.map_node:main',
+            'battery_node=world_map.battery_node:main',
         ],
     },
 )

@@ -1,6 +1,11 @@
-map_lauch:
+map_node:
   ros__parameters:
-    length: 1000
-    width: 1000
+    length: 100
+    width: 100
     spawn_x: 0
     spawn_y: 0
+    fov: 5
+
+battery_node:
+  ros__parameters:
+    max_battery: 100

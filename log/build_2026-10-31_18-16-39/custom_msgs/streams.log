@@ -1,0 +1,63 @@
+[0.015s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs
+[0.037s] -- Found ament_cmake: 2.8.8 (/opt/ros/lyrical/share/ament_cmake/cmake)
+[0.130s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.138s] -- Found rosidl_default_generators: 1.8.1 (/opt/ros/lyrical/share/rosidl_default_generators/cmake)
+[0.140s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.160s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.186s] -- Found rosidl_adapter: 5.2.1 (/opt/ros/lyrical/share/rosidl_adapter/cmake)
+[0.188s] -- Found std_msgs: 5.9.3 (/opt/ros/lyrical/share/std_msgs/cmake)
+[0.382s] CMake Error at /opt/ros/lyrical/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.382s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.382s]   custom_msgs --arguments-file /run/media/pranav/Files/Education/IIT
+[0.382s]   Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter__arguments__custom_msgs.json
+[0.382s]   --output-dir /run/media/pranav/Files/Education/IIT
+[0.383s]   Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs
+[0.383s]   --output-file /run/media/pranav/Files/Education/IIT
+[0.383s]   Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs.idls)
+[0.383s]   returned error code 1:
+[0.383s] 
+[0.383s]   Error processing 'int32 deltaX' of 'custom_msgs/Move_Request': ''deltaX' is
+[0.383s]   an invalid field name.  It should have the pattern
+[0.383s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.383s] 
+[0.383s]   Traceback (most recent call last):
+[0.383s] 
+[0.383s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.383s]     File "<frozen runpy>", line 88, in _run_code
+[0.383s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.383s]       main()
+[0.383s]       ~~~~^^
+[0.383s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/main.py", line 54, in main
+[0.384s]       abs_idl_file = convert_to_idl(
+[0.384s]           pathlib.Path(basepath), args.package_name,
+[0.384s]           pathlib.Path(relative_path), output_dir)
+[0.384s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/__init__.py", line 27, in convert_to_idl
+[0.384s]       return convert_srv_to_idl(
+[0.384s]           package_dir, package_name, interface_file, output_dir / 'srv')
+[0.384s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/srv/__init__.py", line 31, in convert_srv_to_idl
+[0.384s]       srv = parse_service_string(package_name, input_file.stem, content)
+[0.384s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/parser.py", line 907, in parse_service_string
+[0.384s]       request_message = parse_message_string(
+[0.384s]           pkg_name, srv_name + SERVICE_REQUEST_MESSAGE_SUFFIX, request_message_string)
+[0.384s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/parser.py", line 557, in parse_message_string
+[0.384s]       fields.append(Field(
+[0.384s]                     ~~~~~^
+[0.384s]           Type(type_string, context_package_name=pkg_name),
+[0.384s]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.384s]           field_name, optional_default_value_string))
+[0.384s]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.384s]     File "/opt/ros/lyrical/lib/python3.14/site-packages/rosidl_adapter/parser.py", line 378, in __init__
+[0.384s]       raise NameError(
+[0.384s]           "'{}' is an invalid field name. It should have the pattern '{}'".format(
+[0.384s]               name, VALID_FIELD_NAME_PATTERN.pattern))
+[0.384s] 
+[0.384s]   NameError: 'deltaX' is an invalid field name.  It should have the pattern
+[0.384s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.384s] 
+[0.384s] Call Stack (most recent call first):
+[0.384s]   /opt/ros/lyrical/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.384s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.384s] 
+[0.384s] 
+[0.385s] -- Configuring incomplete, errors occurred!
+[0.389s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs -DCMAKE_INSTALL_PREFIX=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs

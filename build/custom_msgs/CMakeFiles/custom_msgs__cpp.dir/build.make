@@ -66,6 +66,11 @@ include CMakeFiles/custom_msgs__cpp.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/custom_msgs__cpp.dir/progress.make
 
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__builder.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__struct.hpp
@@ -76,73 +81,115 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/move.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/lib/rosidl_generator_cpp/rosidl_generator_cpp
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/lib/python3.14/site-packages/rosidl_generator_cpp/__init__.py
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: rosidl_adapter/custom_msgs/msg/Info.idl
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: rosidl_adapter/custom_msgs/srv/Battery.idl
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
-rosidl_generator_cpp/custom_msgs/msg/info.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/lib/rosidl_generator_cpp/rosidl_generator_cpp
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/lib/python3.14/site-packages/rosidl_generator_cpp/__init__.py
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/action__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__builder.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__struct.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/msg/Fov.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/msg/Info.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/srv/Battery.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
 	/usr/bin/python3 /opt/ros/lyrical/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp__arguments.json"
 
-rosidl_generator_cpp/custom_msgs/msg/detail/info__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/fov__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fov__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fov__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fov__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fov__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fov__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/fov__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/fov__type_support.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/info.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/info.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/detail/info__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/info__builder.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/info__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/info__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/info__struct.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/info__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/info__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/info__traits.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/detail/info__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/msg/detail/info__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/detail/info__type_support.hpp
 
-rosidl_generator_cpp/custom_msgs/srv/battery.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/battery.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/battery.hpp
 
-rosidl_generator_cpp/custom_msgs/srv/detail/battery__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/detail/battery__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/battery__builder.hpp
 
-rosidl_generator_cpp/custom_msgs/srv/detail/battery__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/detail/battery__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/battery__struct.hpp
 
-rosidl_generator_cpp/custom_msgs/srv/detail/battery__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/detail/battery__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/battery__traits.hpp
 
-rosidl_generator_cpp/custom_msgs/srv/detail/battery__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/detail/battery__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/battery__type_support.hpp
 
-rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
+rosidl_generator_cpp/custom_msgs/srv/move.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/move.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/move__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/move__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
+
+rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 CMakeFiles/custom_msgs__cpp.dir/codegen:
 .PHONY : CMakeFiles/custom_msgs__cpp.dir/codegen
 
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/fov__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/detail/info__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/info.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/battery.hpp
@@ -150,6 +197,11 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__builder.h
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/battery__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/move.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 

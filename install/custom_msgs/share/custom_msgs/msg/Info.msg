@@ -1,3 +1,1 @@
-float32 battery
-int32 x
-int32 y
+/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs/msg/Info.msg

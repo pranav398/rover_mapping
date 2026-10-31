@@ -3,8 +3,10 @@
   "output_dir": "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs",
   "template_dir": "/opt/ros/lyrical/share/rosidl_generator_cpp/cmake/../resource",
   "idl_tuples": [
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Fov.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Info.idl",
-    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Battery.idl"
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Battery.idl",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Move.idl"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -31,14 +33,18 @@
     "/opt/ros/lyrical/share/rosidl_generator_cpp/cmake/../resource/srv__struct.hpp.em",
     "/opt/ros/lyrical/share/rosidl_generator_cpp/cmake/../resource/srv__traits.hpp.em",
     "/opt/ros/lyrical/share/rosidl_generator_cpp/cmake/../resource/srv__type_support.hpp.em",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Fov.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Info.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/srv/Battery.idl",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/srv/Move.idl",
     "/opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl"
   ],
   "type_description_tuples": [
+    "msg/Fov.idl:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Fov.json",
     "msg/Info.idl:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Info.json",
-    "srv/Battery.idl:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/Battery.json"
+    "srv/Battery.idl:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/Battery.json",
+    "srv/Move.idl:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/Move.json"
   ]
 }

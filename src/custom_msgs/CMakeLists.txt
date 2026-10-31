@@ -14,8 +14,10 @@ find_package(std_msgs REQUIRED)
 # find_package(<dependency> REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/Fov.msg"
   "msg/Info.msg"
   "srv/Battery.srv"
+  "srv/Move.srv"
 )
 
 if(BUILD_TESTING)

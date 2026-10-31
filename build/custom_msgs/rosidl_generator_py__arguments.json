@@ -3,8 +3,10 @@
   "output_dir": "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs",
   "template_dir": "/opt/ros/lyrical/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Fov.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Info.idl",
-    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Battery.idl"
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Battery.idl",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Move.idl"
   ],
   "ros_interface_dependencies": [
     "service_msgs:/opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl",
@@ -26,8 +28,10 @@
     "/opt/ros/lyrical/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/lyrical/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/lyrical/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Fov.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Info.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/srv/Battery.idl",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/srv/Move.idl",
     "/opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl",
     "/opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl"

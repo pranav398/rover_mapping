@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__rosidl_generator_type_description"
+  "rosidl_generator_type_description/custom_msgs/msg/Fov.json"
   "rosidl_generator_type_description/custom_msgs/msg/Info.json"
   "rosidl_generator_type_description/custom_msgs/srv/Battery.json"
+  "rosidl_generator_type_description/custom_msgs/srv/Move.json"
 )
 
 # Per-language clean rules from dependency scanning.

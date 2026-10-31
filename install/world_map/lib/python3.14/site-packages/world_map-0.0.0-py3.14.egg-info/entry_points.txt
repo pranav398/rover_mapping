@@ -1,2 +1,3 @@
 [console_scripts]
+battery_node = world_map.battery_node:main
 map_node = world_map.map_node:main

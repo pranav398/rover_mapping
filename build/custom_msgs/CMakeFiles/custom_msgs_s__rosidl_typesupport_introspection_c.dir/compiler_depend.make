@@ -23,6 +23,9 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
   /opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
   /opt/ros/lyrical/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
   /opt/ros/lyrical/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/fov__functions.h \
+  rosidl_generator_c/custom_msgs/msg/detail/fov__struct.h \
+  rosidl_generator_c/custom_msgs/msg/detail/fov__type_support.h \
   rosidl_generator_c/custom_msgs/msg/detail/info__functions.h \
   rosidl_generator_c/custom_msgs/msg/detail/info__struct.h \
   rosidl_generator_c/custom_msgs/msg/detail/info__type_support.h \
@@ -30,6 +33,9 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
   rosidl_generator_c/custom_msgs/srv/detail/battery__functions.h \
   rosidl_generator_c/custom_msgs/srv/detail/battery__struct.h \
   rosidl_generator_c/custom_msgs/srv/detail/battery__type_support.h \
+  rosidl_generator_c/custom_msgs/srv/detail/move__functions.h \
+  rosidl_generator_c/custom_msgs/srv/detail/move__struct.h \
+  rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -359,8 +365,6 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/syslimits.h:
 
-/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
-
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/15/include/limits.h:
@@ -378,8 +382,6 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so:
 /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/bits/wchar.h:
 
@@ -409,11 +411,11 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/python3.14/fileutils.h:
+/usr/include/x86_64-linux-gnu/bits/types/once_flag.h:
 
-/usr/include/python3.14/cpython/genobject.h:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/python3.14/enumobject.h:
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /opt/ros/lyrical/lib/librosidl_runtime_c.so:
 
@@ -425,15 +427,15 @@ libcustom_msgs__rosidl_generator_py.so:
 
 /usr/include/python3.14/cpython/warnings.h:
 
-/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
-
-/usr/include/linux/close_range.h:
-
 libcustom_msgs__rosidl_typesupport_c.so:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /usr/include/python3.14/Python.h:
+
+/usr/lib/x86_64-linux-gnu/libgcc_s.so.1:
+
+/usr/include/linux/close_range.h:
 
 /usr/include/python3.14/cpython/tracemalloc.h:
 
@@ -529,167 +531,29 @@ rosidl_generator_c/custom_msgs/msg/rosidl_generator_c__visibility_control.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
+
+/usr/include/python3.14/cpython/pyatomic.h:
+
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/python3.14/codecs.h:
 
-/usr/include/linux/errno.h:
-
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
-/usr/include/python3.14/cpython/dictobject.h:
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
 
-/usr/include/python3.14/cpython/pyerrors.h:
+/usr/include/python3.14/boolobject.h:
 
-/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_generator_c.so:
 
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
-
-/usr/include/assert.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
-
-/usr/include/asm-generic/errno.h:
-
-rosidl_generator_c/custom_msgs/msg/detail/info__type_support.h:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
-/usr/include/python3.14/objimpl.h:
-
-/usr/lib/x86_64-linux-gnu/crti.o:
-
-rosidl_generator_c/custom_msgs/srv/detail/battery__functions.h:
-
-/usr/include/python3.14/cpython/weakrefobject.h:
-
-/usr/include/python3.14/cpython/modsupport.h:
-
-/opt/ros/lyrical/include/rcutils/rcutils/visibility_control.h:
-
-/usr/include/python3.14/listobject.h:
-
-/usr/include/python3.14/pymath.h:
-
-/usr/include/python3.14/cpython/floatobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
-
-/usr/include/python3.14/genericaliasobject.h:
-
-/usr/include/python3.14/lock.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
-
-rosidl_generator_c/custom_msgs/srv/detail/battery__struct.h:
-
-/usr/include/python3.14/cpython/bytesobject.h:
-
-/usr/include/python3.14/pyhash.h:
-
-/usr/include/stdio.h:
-
-/usr/include/python3.14/bytearrayobject.h:
-
-/opt/ros/lyrical/lib/librosidl_typesupport_c.so:
-
-/usr/include/python3.14/cpython/pymem.h:
-
-/usr/include/python3.14/exports.h:
-
-/usr/include/python3.14/cpython/critical_section.h:
-
-/usr/include/linux/limits.h:
-
-/usr/include/python3.14/fileobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
-
-rosidl_generator_c/custom_msgs/msg/detail/info__functions.h:
-
-/usr/include/python3.14/floatobject.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
-
-/usr/include/linux/types.h:
-
-/usr/include/python3.14/cpython/abstract.h:
-
-/usr/include/python3.14/cpython/funcobject.h:
-
-/opt/ros/lyrical/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
-
-/usr/include/python3.14/cpython/pythread.h:
-
-/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
-
-/opt/ros/lyrical/include/rcutils/rcutils/visibility_control_macros.h:
-
-/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
-
-/opt/ros/lyrical/include/rcutils/rcutils/sha256.h:
-
-/usr/include/features.h:
-
-/usr/include/python3.14/cpython/cellobject.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
-
-/usr/include/pthread.h:
-
-/usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
-
-/usr/include/python3.14/rangeobject.h:
-
-/opt/ros/lyrical/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
-
-/opt/ros/lyrical/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
-
-/usr/include/stdint.h:
-
-/usr/include/endian.h:
-
-/opt/ros/lyrical/lib/librcutils.so:
-
-/usr/include/python3.14/moduleobject.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
-
-/usr/include/x86_64-linux-gnu/bits/confname.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/usr/include/python3.14/cpython/longintrepr.h:
-
-/usr/include/linux/stat.h:
-
-/usr/include/python3.14/osmodule.h:
-
-/usr/include/python3.14/cpython/traceback.h:
-
-/usr/include/x86_64-linux-gnu/bits/endian.h:
-
-/usr/include/inttypes.h:
-
-/usr/include/python3.14/cpython/pyctype.h:
-
-CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
-
-/usr/include/alloca.h:
-
-/usr/include/python3.14/cpython/code.h:
-
-/usr/include/asm-generic/errno-base.h:
+/usr/include/python3.14/audit.h:
 
 /usr/include/python3.14/tupleobject.h:
 
 /usr/include/python3.14/abstract.h:
+
+/usr/include/linux/stat.h:
 
 /usr/include/python3.14/cpython/odictobject.h:
 
@@ -705,7 +569,93 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
 
 /usr/include/python3.14/pyframe.h:
 
-/usr/include/python3.14/cpython/initconfig.h:
+/usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
+
+/usr/include/asm-generic/errno.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/fov__struct.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/info__type_support.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/python3.14/objimpl.h:
+
+/usr/include/python3.14/cpython/floatobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/statx-generic.h:
+
+/usr/include/python3.14/enumobject.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/field__struct.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/python3.14/cpython/bytesobject.h:
+
+/usr/include/python3.14/pyhash.h:
+
+/usr/include/stdio.h:
+
+/usr/include/python3.14/bytearrayobject.h:
+
+/usr/include/python3.14/cpython/weakrefobject.h:
+
+/usr/include/python3.14/cpython/modsupport.h:
+
+/opt/ros/lyrical/include/rcutils/rcutils/visibility_control.h:
+
+/usr/lib/x86_64-linux-gnu/crti.o:
+
+rosidl_generator_c/custom_msgs/srv/detail/battery__functions.h:
+
+/usr/include/python3.14/listobject.h:
+
+/usr/include/python3.14/pymath.h:
+
+/opt/ros/lyrical/lib/librosidl_typesupport_c.so:
+
+/usr/include/python3.14/cpython/pymem.h:
+
+/usr/include/python3.14/exports.h:
+
+/usr/include/python3.14/cpython/dictobject.h:
+
+/usr/include/python3.14/cpython/pyerrors.h:
+
+/usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
+
+/usr/include/python3.14/cpython/longintrepr.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/python3.14/cpython/critical_section.h:
+
+/usr/include/python3.14/cpython/traceback.h:
+
+/usr/include/python3.14/osmodule.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/python3.14/cpython/abstract.h:
+
+/usr/include/python3.14/cpython/funcobject.h:
+
+/opt/ros/lyrical/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_hash.h:
+
+/usr/include/assert.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/fov__type_support.h:
+
+/usr/include/python3.14/cpython/descrobject.h:
+
+/usr/include/python3.14/pythonrun.h:
+
+/usr/include/python3.14/cpython/pyctype.h:
+
+/usr/include/inttypes.h:
 
 /usr/include/ctype.h:
 
@@ -714,6 +664,104 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
 /usr/include/python3.14/ceval.h:
 
 /usr/include/errno.h:
+
+/usr/include/python3.14/cpython/pythread.h:
+
+/usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
+
+/opt/ros/lyrical/include/rcutils/rcutils/visibility_control_macros.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/opt/ros/lyrical/include/rcutils/rcutils/sha256.h:
+
+/usr/include/features.h:
+
+/opt/ros/lyrical/include/service_msgs/service_msgs/msg/detail/service_event_info__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/mathcalls-macros.h:
+
+/usr/include/python3.14/rangeobject.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/fov__functions.h:
+
+/usr/include/strings.h:
+
+/usr/include/python3.14/patchlevel.h:
+
+/usr/include/python3.14/cpython/cellobject.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/individual_type_description__struct.h:
+
+/usr/include/pthread.h:
+
+/opt/ros/lyrical/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+/usr/include/stdint.h:
+
+/usr/include/endian.h:
+
+/opt/ros/lyrical/lib/librcutils.so:
+
+/usr/include/python3.14/moduleobject.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c.o:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/battery__struct.h:
+
+/usr/include/python3.14/cpython/genobject.h:
+
+/usr/include/python3.14/fileutils.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_description__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/python3.14/cpython/code.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+rosidl_generator_c/custom_msgs/msg/detail/info__functions.h:
+
+/usr/include/python3.14/floatobject.h:
+
+/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
+
+/usr/include/linux/types.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/15/include/stddef.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/move__functions.h:
+
+/usr/include/python3.14/genericaliasobject.h:
+
+/usr/include/python3.14/lock.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/move__struct.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/linux/errno.h:
+
+rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h:
+
+/usr/include/alloca.h:
+
+/usr/include/python3.14/cpython/initconfig.h:
 
 /usr/include/python3.14/longobject.h:
 
@@ -733,13 +781,9 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
 
 /usr/include/linux/sched/types.h:
 
-/opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_generator_c.so:
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
-/usr/include/python3.14/audit.h:
-
-/opt/ros/lyrical/include/rosidl_runtime_c/rosidl_runtime_c/type_description/type_source__struct.h:
-
-/usr/include/python3.14/boolobject.h:
+/usr/include/python3.14/fileobject.h:
 
 /usr/include/python3.14/iterobject.h:
 
@@ -750,10 +794,6 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/python3.14/modsupport.h:
-
-/usr/include/strings.h:
-
-/usr/include/python3.14/patchlevel.h:
 
 /usr/include/python3.14/pyatomic.h:
 
@@ -785,10 +825,6 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_introspection_c.dir/rosidl_generato
 
 /usr/include/python3.14/pystrtod.h:
 
-/usr/include/python3.14/cpython/descrobject.h:
-
-/usr/include/python3.14/pythonrun.h:
-
 /usr/include/python3.14/pythread.h:
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c:
@@ -802,6 +838,10 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 /usr/include/features-time64.h:
 
 /usr/include/python3.14/refcount.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
+
+/usr/include/python3.14/unicodeobject.h:
 
 /usr/include/python3.14/setobject.h:
 
@@ -859,6 +899,12 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
+libcustom_msgs__rosidl_generator_c.so:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
+
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
+
 /usr/include/x86_64-linux-gnu/bits/local_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
@@ -866,10 +912,6 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspecti
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h:
-
-/usr/include/python3.14/cpython/pyatomic.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
@@ -895,17 +937,9 @@ rosidl_generator_c/custom_msgs/srv/detail/battery__type_support.h:
 
 /usr/include/x86_64-linux-gnu/bits/stat.h:
 
-/usr/include/python3.14/unicodeobject.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
 /usr/include/python3.14/bytesobject.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
@@ -944,19 +978,3 @@ rosidl_generator_c/custom_msgs/msg/detail/info__struct.h:
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/once_flag.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/asm-generic/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
-libcustom_msgs__rosidl_generator_c.so:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:

@@ -1,0 +1,6 @@
+int32 delta_x
+int32 delta_y
+int32 deduction
+---
+bool accepted
+string reason
