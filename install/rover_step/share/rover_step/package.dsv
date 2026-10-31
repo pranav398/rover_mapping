@@ -1,0 +1,6 @@
+source;share/rover_step/hook/pythonpath.ps1
+source;share/rover_step/hook/pythonpath.dsv
+source;share/rover_step/hook/pythonpath.sh
+source;share/rover_step/hook/ament_prefix_path.ps1
+source;share/rover_step/hook/ament_prefix_path.dsv
+source;share/rover_step/hook/ament_prefix_path.sh

@@ -1,0 +1,28 @@
+[1.039s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map': PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/world_map build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log --install-scripts $base/lib/world_map --single-version-externally-managed install_data
+[1.240s] running egg_info
+[1.256s] writing ../../build/world_map/world_map.egg-info/PKG-INFO
+[1.256s] writing dependency_links to ../../build/world_map/world_map.egg-info/dependency_links.txt
+[1.257s] writing entry points to ../../build/world_map/world_map.egg-info/entry_points.txt
+[1.257s] writing requirements to ../../build/world_map/world_map.egg-info/requires.txt
+[1.257s] writing top-level names to ../../build/world_map/world_map.egg-info/top_level.txt
+[1.282s] reading manifest file '../../build/world_map/world_map.egg-info/SOURCES.txt'
+[1.283s] writing manifest file '../../build/world_map/world_map.egg-info/SOURCES.txt'
+[1.283s] running build
+[1.283s] running build_py
+[1.283s] copying world_map/map_node.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map
+[1.283s] copying world_map/__init__.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map
+[1.284s] copying world_map/py.typed -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map
+[1.284s] running install
+[1.287s] running install_lib
+[1.299s] running install_data
+[1.300s] copying resource/world_map -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/ament_index/resource_index/packages
+[1.300s] copying package.xml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map
+[1.300s] copying config/rover.params.yaml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/config
+[1.300s] copying launch/map.launch.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/launch
+[1.300s] running install_egg_info
+[1.312s] removing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map-0.0.0-py3.14.egg-info' (and everything under it)
+[1.312s] Copying ../../build/world_map/world_map.egg-info to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map-0.0.0-py3.14.egg-info
+[1.313s] running install_scripts
+[1.377s] Installing map_node script to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/world_map
+[1.377s] writing list of installed files to '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log'
+[1.413s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map' returned '0': PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/world_map build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log --install-scripts $base/lib/world_map --single-version-externally-managed install_data

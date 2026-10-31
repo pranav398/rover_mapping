@@ -1,0 +1,30 @@
+[1.440s] Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/rover_step': PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rover_step build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/install.log --install-scripts $base/lib/rover_step --single-version-externally-managed install_data
+[1.634s] running egg_info
+[1.644s] creating ../../build/rover_step/rover_step.egg-info
+[1.644s] writing ../../build/rover_step/rover_step.egg-info/PKG-INFO
+[1.644s] writing dependency_links to ../../build/rover_step/rover_step.egg-info/dependency_links.txt
+[1.644s] writing requirements to ../../build/rover_step/rover_step.egg-info/requires.txt
+[1.645s] writing top-level names to ../../build/rover_step/rover_step.egg-info/top_level.txt
+[1.645s] writing manifest file '../../build/rover_step/rover_step.egg-info/SOURCES.txt'
+[1.666s] reading manifest file '../../build/rover_step/rover_step.egg-info/SOURCES.txt'
+[1.667s] writing manifest file '../../build/rover_step/rover_step.egg-info/SOURCES.txt'
+[1.667s] running build
+[1.667s] running build_py
+[1.667s] creating /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step
+[1.667s] copying rover_step/__init__.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step
+[1.667s] copying rover_step/py.typed -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step
+[1.667s] running install
+[1.670s] running install_lib
+[1.680s] creating /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step
+[1.680s] copying /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step/py.typed -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step
+[1.681s] copying /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step/__init__.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step
+[1.681s] byte-compiling /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step/__init__.py to __init__.cpython-314.pyc
+[1.681s] running install_data
+[1.681s] creating /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/share/ament_index/resource_index/packages
+[1.681s] copying resource/rover_step -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/share/ament_index/resource_index/packages
+[1.681s] copying package.xml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/share/rover_step
+[1.681s] running install_egg_info
+[1.691s] Copying ../../build/rover_step/rover_step.egg-info to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step-0.0.0-py3.14.egg-info
+[1.693s] running install_scripts
+[1.751s] writing list of installed files to '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/install.log'
+[1.800s] Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/rover_step' returned '0': PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rover_step build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/install.log --install-scripts $base/lib/rover_step --single-version-externally-managed install_data

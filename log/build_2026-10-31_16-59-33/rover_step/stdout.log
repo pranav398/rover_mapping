@@ -1,0 +1,21 @@
+running egg_info
+writing ../../build/rover_step/rover_step.egg-info/PKG-INFO
+writing dependency_links to ../../build/rover_step/rover_step.egg-info/dependency_links.txt
+writing requirements to ../../build/rover_step/rover_step.egg-info/requires.txt
+writing top-level names to ../../build/rover_step/rover_step.egg-info/top_level.txt
+reading manifest file '../../build/rover_step/rover_step.egg-info/SOURCES.txt'
+writing manifest file '../../build/rover_step/rover_step.egg-info/SOURCES.txt'
+running build
+running build_py
+copying rover_step/__init__.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step
+copying rover_step/py.typed -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/build/lib/rover_step
+running install
+running install_lib
+running install_data
+copying resource/rover_step -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/share/ament_index/resource_index/packages
+copying package.xml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/share/rover_step
+running install_egg_info
+removing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step-0.0.0-py3.14.egg-info' (and everything under it)
+Copying ../../build/rover_step/rover_step.egg-info to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/rover_step/lib/python3.14/site-packages/rover_step-0.0.0-py3.14.egg-info
+running install_scripts
+writing list of installed files to '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/rover_step/install.log'
