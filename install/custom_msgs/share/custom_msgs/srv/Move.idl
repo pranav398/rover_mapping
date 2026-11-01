@@ -1,1 +1,21 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/srv/Move.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from custom_msgs/srv/Move.srv
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module srv {
+    struct Move_Request {
+      int32 delta_x;
+
+      int32 delta_y;
+
+      float deduction;
+    };
+    struct Move_Response {
+      boolean accepted;
+
+      string reason;
+    };
+  };
+};

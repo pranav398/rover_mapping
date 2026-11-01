@@ -1,1 +1,12 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs/msg/Fov.msg
+int32 x
+int32 y
+float32 battery
+uint32 fov_size
+int32 target_x
+int32 target_y
+int32 target_rad
+float32[] height
+float32[] roughness
+float32[] muddiness
+float32[] wetness
+bool[] goal_cells

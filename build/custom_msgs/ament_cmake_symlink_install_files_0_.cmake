@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" FILES "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/custom_msgs" "DESTINATION" "share/ament_index/resource_index/rosidl_interfaces")

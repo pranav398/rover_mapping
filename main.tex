@@ -1,0 +1,342 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!55!black,
+    urlcolor=blue!65!black,
+    pdftitle={Rover Mapping and Autonomous Exploration},
+    pdfauthor={Rover Mapping Project}
+}
+
+\definecolor{codebackground}{RGB}{247,248,250}
+\definecolor{codeframe}{RGB}{220,224,230}
+\definecolor{codekeyword}{RGB}{35,75,145}
+\definecolor{codecomment}{RGB}{80,125,90}
+
+\lstdefinestyle{terminal}{
+    backgroundcolor=\color{codebackground},
+    basicstyle=\ttfamily\small,
+    frame=single,
+    rulecolor=\color{codeframe},
+    breaklines=true,
+    columns=fullflexible,
+    keepspaces=true,
+    showstringspaces=false
+}
+\lstset{style=terminal}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Rover Mapping Project}
+\rhead{Technical Report}
+\cfoot{\thepage}
+\setlength{\headheight}{14pt}
+
+\titleformat{\section}{\Large\bfseries}{\thesection}{0.7em}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{0.7em}{}
+\setlist[itemize]{leftmargin=1.5em,itemsep=0.25em,topsep=0.4em}
+\setlist[enumerate]{leftmargin=1.7em,itemsep=0.3em,topsep=0.4em}
+
+\title{
+    \vspace{-1.5em}
+    \textbf{Rover Mapping and Autonomous Exploration}\\[0.4em]
+    \large ROS 2 Project Technical Report
+}
+\author{Rover Mapping Project}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+This report describes a ROS 2 rover simulation workspace that generates a
+procedural terrain, tracks rover position and battery state, publishes a local
+field of view (FOV), and selects movements in exploration or destination mode.
+The goal is placed inside a randomly generated target square and is disclosed
+to the explorer only when the goal cell appears in an FOV message. The project
+uses custom ROS 2 messages and services to connect its map, battery, and
+exploration nodes.
+\end{abstract}
+\newpage
+
+\section{Project Overview}
+
+The project is a ROS 2 prototype for mapping and exploring a two-dimensional
+grid world. Each map cell has four environment values:
+\begin{itemize}
+    \item height,
+    \item roughness,
+    \item muddiness, and
+    \item wetness.
+\end{itemize}
+
+The simulated rover has integer grid coordinates and a floating-point battery
+level. It requests movement through a ROS service. The map node checks and
+charges the movement's battery cost before changing the rover position. A
+local FOV message provides the explorer with nearby terrain and target-area
+information.
+
+\subsection{Workspace packages}
+
+\begin{tabularx}{\textwidth}{>{\ttfamily}p{0.25\textwidth}X}
+\toprule
+\normalfont\textbf{Package} & \textbf{Responsibility}\\
+\midrule
+custom\_msgs & Defines the project's ROS messages and services.\\
+world\_map & Implements the map, battery, and explorer nodes, launch file,
+configuration, and switch-mode client.\\
+\bottomrule
+\end{tabularx}
+
+\section{System Architecture}
+
+\subsection{Nodes}
+
+\begin{description}[style=nextline,leftmargin=1.6em,labelwidth=1.4em]
+    \item[\texttt{map\_node}]
+    Generates the terrain and random coordinates, owns the rover's position,
+    serves movement requests, publishes the local FOV, and displays terrain
+    maps.
+    \item[\texttt{battery\_node}]
+    Maintains battery state, publishes it periodically, and serves requests
+    to deduct movement costs.
+    \item[\texttt{explore\_node}]
+    Consumes FOV messages, maintains an observed-cell matrix and visualization,
+    and chooses moves in exploration or destination mode.
+    \item[\texttt{switch\_mode\_client}]
+    Makes a one-shot request to switch the explorer between its two modes
+    using a boolean ROS parameter.
+\end{description}
+
+\subsection{ROS communication}
+
+\begin{tabularx}{\textwidth}{p{0.25\textwidth}p{0.29\textwidth}X}
+\toprule
+\normalfont\textbf{Name} & \textbf{Type} & \textbf{Purpose}\\
+\midrule
+\path{/rover/fov} & Topic, \path{custom_msgs/msg/Fov} & Publishes rover pose,
+battery, target-square metadata, local terrain layers, and per-cell goal
+indicators.\\
+\path{/rover/battery} & Topic, \path{std_msgs/msg/Float32} & Publishes current
+battery state.\\
+\path{/rover/move} & Service, \path{custom_msgs/srv/Move} & Requests a grid
+displacement and battery deduction.\\
+\path{/rover/update_battery} & Service, \path{custom_msgs/srv/Battery} &
+Accepts or rejects a battery deduction.\\
+\path{/rover/switch_mode} & Service, \path{custom_msgs/srv/SwitchMode} &
+Changes the active explorer timer callback.\\
+\bottomrule
+\end{tabularx}
+
+\section{Terrain and Random World Setup}
+
+\subsection{Terrain generation}
+
+The map node creates height, roughness, muddiness, and wetness grids with
+dimensions \texttt{length} by \texttt{width}. Height is initialized at the map
+center and expanded outward in increasing distance from that center. Each new
+height value uses already-initialized neighboring values and a random noise
+term. Roughness, muddiness, and wetness are independently sampled in the
+interval from 0 to 1.
+
+The map node displays four terrain plots. The height plot also shows a star
+marker for the rover and updates it when an accepted move changes the rover
+position.
+
+\subsection{Coordinate generation}
+
+The map node generates coordinates after generating the terrain. The
+configurable \texttt{target\_rad} determines a square target area with side
+length \(2r+1\), where \(r=\texttt{target\_rad}\). The generated values are
+integers:
+\begin{itemize}
+    \item \textbf{Goal \((g_x,g_y)\):} sampled from map coordinates.
+    \item \textbf{Target center \((t_x,t_y)\):} selected so the goal lies
+    within the target square. The complete square must fit inside the map.
+    \item \textbf{Spawn \((s_x,s_y)\):} selected outside the target square.
+    Its octile distance to the goal must be between \(1.5r\) and \(2r\),
+    inclusive.
+\end{itemize}
+
+The current generator also requires the goal and spawn cells to be dry enough
+to walk on and the spawn to have at least one walkable adjacent cell. It makes
+up to 10,000 attempts and raises an error if it cannot find a valid
+configuration. On success, the map node logs the generated goal, target
+center, radius, and spawn.
+
+The explorer does not receive the goal coordinates directly. The FOV message
+contains target-center and radius metadata, plus a boolean array indicating
+whether each visible FOV cell is the goal. The explorer records the goal only
+when that indicator appears in a received FOV.
+
+\section{Messages and Services}
+
+\subsection{Custom message: \texttt{Fov}}
+
+The FOV message includes:
+\begin{itemize}
+    \item rover coordinates \texttt{x} and \texttt{y},
+    \item battery level and FOV side length,
+    \item target center and target radius,
+    \item height, roughness, muddiness, and wetness arrays, and
+    \item a boolean \texttt{goal\_cells} array.
+\end{itemize}
+
+Each terrain layer and the goal indicator are serialized as a one-dimensional,
+row-major array. For FOV side length \(n\), the arrays contain \(n^2\) entries;
+row \(i\), column \(j\) is at index \(i n+j\). The FOV timer publishes twice
+per second. Out-of-map terrain padding uses height \(100.0\) and \(-1.0\) for
+roughness, muddiness, and wetness. Out-of-map cells are not marked as goals.
+
+\subsection{Custom services}
+
+\begin{description}[style=nextline,leftmargin=1.7em]
+    \item[\texttt{Move}]
+    Request fields are \texttt{delta\_x}, \texttt{delta\_y}, and floating-point
+    \texttt{deduction}. The response contains \texttt{accepted} and
+    \texttt{reason}.
+    \item[\texttt{Battery}]
+    Accepts a floating-point \texttt{deduction} and returns \texttt{accepted}
+    and \texttt{reason}. The battery node rejects a deduction that would make
+    the balance negative; otherwise it subtracts the requested amount.
+    \item[\texttt{SwitchMode}]
+    Accepts boolean \texttt{mode} and returns \texttt{success} and
+    \texttt{message}. True selects exploration mode; false selects destination
+    mode.
+\end{description}
+
+\section{Movement and Battery Flow}
+
+For each movement request, the map node first waits for the battery service.
+It forwards the requested deduction to the battery node. If the battery node
+accepts the deduction, the map node applies \texttt{delta\_x} and
+\texttt{delta\_y} to the rover's coordinates and returns an accepted response.
+If the battery service is unavailable or rejects the deduction, the rover
+position is not updated.
+
+The explorer sends movement requests asynchronously and waits for the updated
+FOV before planning another move. This prevents it from planning repeatedly
+against a stale rover pose.
+
+\section{Exploration and Destination Modes}
+
+\subsection{Exploration mode}
+
+The explorer starts with \texttt{mode=True}. Its one-second timer calls
+\texttt{moveRequest}. The planner evaluates adjacent moves using local
+walkability, battery affordability, terrain values, and the number of newly
+observed cells. It uses a short lookahead when scoring moves and falls back to
+progress toward an unexplored frontier when the immediate information score
+does not select a move. Cells covered by an incoming FOV are marked explored
+in the explorer's boolean matrix.
+
+\subsection{Destination mode}
+
+The same one-second timer calls \texttt{destinationRequest} after the mode is
+switched to false. Before the goal is observed, destination planning is toward
+the target square and the planner can explore cells within that area. Once
+the goal indicator is observed, the planner selects walkable, affordable
+steps that reduce octile distance to the discovered goal. It returns a
+zero-displacement result at the goal, and the timer callback then leaves the
+rover stationary.
+
+The planner uses local FOV data and a one-cell movement neighborhood. It is a
+heuristic local planner, not a global path planner; obstacles or battery
+constraints can prevent it from finding a route even when a longer route
+exists.
+
+\subsection{Mode-switch client}
+
+The switch-mode client declares a boolean parameter named \texttt{mode}, whose
+default is false. It waits up to five seconds for the switch service and for
+the response, then logs the service result. The launch file currently starts
+this client with \texttt{mode=False}; therefore, the launched system switches
+to destination mode shortly after startup. Remove or comment out that launch
+action to leave the explorer in its default exploration mode.
+
+\section{Configuration and Running}
+
+The default configuration is in
+\texttt{src/world\_map/config/rover.params.yaml}. It currently sets a
+\(100\times100\) map, FOV side length 5, target radius 5, and maximum battery
+100.0. Spawn and target coordinates are generated at runtime rather than
+loaded from this YAML file.
+
+Build and launch from the workspace root:
+\begin{lstlisting}
+colcon build --symlink-install
+source install/setup.zsh
+ros2 launch world_map map.launch.py
+\end{lstlisting}
+
+To switch modes manually while the system is running, invoke the client with
+the desired parameter:
+\begin{lstlisting}
+ros2 run world_map switch_mode_client --ros-args -p mode:=true
+ros2 run world_map switch_mode_client --ros-args -p mode:=false
+\end{lstlisting}
+
+The map and explored-state visualizations use Matplotlib. A graphical
+environment and an interactive Matplotlib backend are needed to see the plot
+windows.
+
+\section{Implementation Notes and Limitations}
+
+\begin{itemize}
+    \item The FOV arrays are flattened for ROS message transport; subscribers
+    reshape them into \(n\times n\) matrices using the advertised FOV size.
+    \item The goal is hidden as a coordinate, but the target center and radius
+    are sent in every FOV message so the explorer can search the target area.
+    \item The current coordinate generator checks the local terrain condition
+    of the goal, spawn, and at least one spawn neighbor. It does not prove
+    global connectivity between spawn, target square, and goal.
+    \item The explorer's observed matrix marks cells covered by the FOV. It
+    therefore represents observed cells, not only rover-occupied cells.
+    \item Destination movement is greedy with respect to locally visible
+    walkable cells after goal discovery. It does not perform global
+    pathfinding or guarantee recovery from a locally blocked route.
+    \item The map and explorer receive map dimensions through ROS parameters.
+    If dimensions are changed, the values configured for both nodes must
+    remain consistent.
+\end{itemize}
+
+\section{Project File Map}
+
+\begin{tabularx}{\textwidth}{p{0.52\textwidth}X}
+\toprule
+\normalfont\textbf{Path} & \textbf{Role}\\
+\midrule
+\path{src/custom_msgs/msg/Fov.msg} & Local terrain and goal-observation message.\\
+\path{src/custom_msgs/msg/Info.msg} & Rover state message.\\
+\path{src/custom_msgs/srv/Move.srv} & Rover movement request and response.\\
+\path{src/custom_msgs/srv/Battery.srv} & Battery deduction request and response.\\
+\path{src/custom_msgs/srv/SwitchMode.srv} & Explorer mode-switch request and response.\\
+\path{src/world_map/world_map/map_node.py} & Terrain generation, movement service,
+FOV publisher, and map visualization.\\
+\path{src/world_map/world_map/battery_node.py} & Battery publisher and deduction
+service.\\
+\path{src/world_map/world_map/explore_node.py} & FOV consumer, exploration planner,
+destination planner, and explored-map display.\\
+\path{src/world_map/world_map/switch_mode_client.py} & One-shot mode-switch client.\\
+\path{src/world_map/launch/map.launch.py} & Launches the ROS nodes and configured
+mode-switch client.\\
+\path{src/world_map/config/rover.params.yaml} & Default map, FOV, target-radius, and
+battery parameters.\\
+\bottomrule
+\end{tabularx}
+
+\end{document}

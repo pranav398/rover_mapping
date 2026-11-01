@@ -1,1 +1,15 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/config/rover.params.yaml
+map_node:
+  ros__parameters:
+    length: 100
+    width: 100
+    fov: 5
+    target_rad: 5
+
+battery_node:
+  ros__parameters:
+    max_battery: 100.0
+
+explore_node:
+  ros__parameters:
+    length: 100
+    width: 100

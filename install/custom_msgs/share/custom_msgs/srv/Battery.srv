@@ -1,1 +1,4 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs/srv/Battery.srv
+float32 deduction
+---
+bool accepted
+string reason

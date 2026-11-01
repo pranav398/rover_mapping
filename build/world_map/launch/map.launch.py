@@ -1,1 +1,0 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map/launch/map.launch.py

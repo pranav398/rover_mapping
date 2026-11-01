@@ -1,1 +1,34 @@
-/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs/msg/Fov.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from custom_msgs/msg/Fov.msg
+// generated code does not contain a copyright notice
+
+
+module custom_msgs {
+  module msg {
+    struct Fov {
+      int32 x;
+
+      int32 y;
+
+      float battery;
+
+      uint32 fov_size;
+
+      int32 target_x;
+
+      int32 target_y;
+
+      int32 target_rad;
+
+      sequence<float> height;
+
+      sequence<float> roughness;
+
+      sequence<float> muddiness;
+
+      sequence<float> wetness;
+
+      sequence<boolean> goal_cells;
+    };
+  };
+};

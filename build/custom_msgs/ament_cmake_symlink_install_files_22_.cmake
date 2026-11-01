@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_files("/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" FILES "/opt/ros/lyrical/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh" "DESTINATION" "share/custom_msgs/environment")
