@@ -6,7 +6,7 @@
 module custom_msgs {
   module srv {
     struct Battery_Request {
-      int32 deduction;
+      float deduction;
     };
     struct Battery_Response {
       boolean accepted;

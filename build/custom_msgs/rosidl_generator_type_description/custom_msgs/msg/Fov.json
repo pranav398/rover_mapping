@@ -24,9 +24,49 @@
           "default_value": ""
         },
         {
+          "name": "battery",
+          "type": {
+            "type_id": 10,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
           "name": "fov_size",
           "type": {
             "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "target_x",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "target_y",
+          "type": {
+            "type_id": 6,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "target_rad",
+          "type": {
+            "type_id": 6,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -72,6 +112,16 @@
             "nested_type_name": ""
           },
           "default_value": ""
+        },
+        {
+          "name": "goal_cells",
+          "type": {
+            "type_id": 159,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
         }
       ]
     },
@@ -80,7 +130,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msgs/msg/Fov",
-      "hash_string": "RIHS01_5401572c118831d355e2de2c545b22b648e04582b5160721b427a2696f743117"
+      "hash_string": "RIHS01_a15689982356a079e6e88d0a9100852b43850adf36b81818012f48368e134776"
     }
   ]
 }

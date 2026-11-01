@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "rosidl_generator_type_description/custom_msgs/msg/Info.json"
   "rosidl_generator_type_description/custom_msgs/srv/Battery.json"
   "rosidl_generator_type_description/custom_msgs/srv/Move.json"
+  "rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json"
 )
 
 # Per-language clean rules from dependency scanning.

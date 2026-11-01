@@ -8,12 +8,15 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/battery__type_support.cpp.o.d"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/move__type_support.cpp.o"
   "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/move__type_support.cpp.o.d"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/switch_mode__type_support.cpp.o"
+  "CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/switch_mode__type_support.cpp.o.d"
   "libcustom_msgs__rosidl_typesupport_c.pdb"
   "libcustom_msgs__rosidl_typesupport_c.so"
   "rosidl_typesupport_c/custom_msgs/msg/fov__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/msg/info__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/srv/battery__type_support.cpp"
   "rosidl_typesupport_c/custom_msgs/srv/move__type_support.cpp"
+  "rosidl_typesupport_c/custom_msgs/srv/switch_mode__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -26,7 +26,7 @@
         {
           "name": "deduction",
           "type": {
-            "type_id": 6,
+            "type_id": 10,
             "capacity": 0,
             "string_capacity": 0,
             "nested_type_name": ""
@@ -40,7 +40,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msgs/srv/Move_Request",
-      "hash_string": "RIHS01_6be88e44f73f98b4f4bdf231482f8880a9a89426f9549cf081c33b4ecb874496"
+      "hash_string": "RIHS01_68b3db1a9c16ff619928ca631a6b838ff2df9a56d7a2112e781d5a3cc17a5f07"
     }
   ]
 }

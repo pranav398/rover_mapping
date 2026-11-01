@@ -1,0 +1,362 @@
+[0.000000] (-) TimerEvent: {}
+[0.001904] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.002224] (world_map) JobQueued: {'identifier': 'world_map', 'dependencies': OrderedDict({'custom_msgs': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs'})}
+[0.005447] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.086878] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.090191] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[0.094438] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', '--', '-j12', '-l12'], 'cwd': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'AUTO_LOCAL_ROUTING': 'false', 'RUBBER_DUCK_AGENT': 'true', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT': 'false', 'AI_AGENT': 'github_copilot_vscode_agent', 'USER': 'pranav', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/lib/x86_64-linux-gnu:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'HOME': '/home/pranav', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'GIT_CONFIG_COUNT': '3', 'OLDPWD': '/home/pranav', 'DESKTOP_SESSION': 'ubuntu', 'COPILOT_CLI_RUN_AS_NODE': '1', 'IM_CONFIG_ENTRY': 'profile', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '4686', 'COPILOT_CLI': '1', 'SYSTEMD_EXEC_PID': '5133', 'SSH_ASKPASS': '', 'ANTHROPIC_ADVISOR': 'false', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200949', 'COPILOT_HOME': '/home/pranav/.copilot', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GIT_OPTIONAL_LOCKS': '0', 'WAYLAND_DISPLAY': 'wayland-0', 'GCM_INTERACTIVE': 'Never', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pranav', '_': '/usr/bin/colcon', 'MANAGERPIDFDID': '41320', 'JOURNAL_STREAM': '10:34499', 'ROS_VERSION': '2', 'SKILL_CHAR_BUDGET': '30000', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pranav', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINML_LOCAL_MODELS': 'false', 'FC_FONTATIONS': '1', 'GIT_CONFIG_VALUE_0': 'explicit', 'PATH': '/home/pranav/.cargo/bin:/home/pranav/.local/bin:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/share/code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/linux-x64:/usr/share/code/resources/app/node_modules.asar.unpacked/@github/copilot-sdk-linux-x64/ripgrep/bin/linux-x64', 'INVOCATION_ID': '09cd87b7f89b452595424e40759c41b0', 'GIT_CONFIG_VALUE_1': 'never', 'CLAUDE_CODE_DISABLE_PRECOMPACT_SKIP': '1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': 'unix:/tmp/.X11-unix/X1', 'GIT_CONFIG_VALUE_2': 'false', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.67C1X3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gcr/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'COPILOT_AGENT_SESSION_ID': '8d8e97c4-d122-4464-a0c4-d5f845302526', 'SHELL': '/usr/bin/zsh', 'COPILOT_RUNTIME_PROCESS_FILE_LOGGING': '1', 'GIT_TERMINAL_PROMPT': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'GIT_CONFIG_KEY_1': 'credential.interactive', 'GIT_CONFIG_KEY_2': 'core.fsmonitor', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'COPILOT_MCP_APPS': 'true', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', 'AUTO_APPROVAL': 'true', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_SESSION_EXTRA_DEVICE_ACCESS': 'render:accel', 'COPILOT_ENABLE_BUILTIN_GITHUB_MCP': 'true', 'PYTHONPATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT_MODEL': 'gpt-5.6-luna', 'COLCON': '1', 'QT_IM_MODULES': 'wayland;ibus', 'COPILOT_CLI_ENABLED_FEATURE_FLAGS': 'SHELL_SPAWN_BACKEND', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}), 'shell': False}
+[0.106570] (-) TimerEvent: {}
+[0.206997] (-) TimerEvent: {}
+[0.307529] (-) TimerEvent: {}
+[0.408018] (-) TimerEvent: {}
+[0.459563] (custom_msgs) StdoutLine: {'line': b'[  1%] Built target custom_msgs__rosidl_generator_type_description\n'}
+[0.461097] (custom_msgs) StdoutLine: {'line': b'[  3%] Built target custom_msgs__rs\n'}
+[0.508253] (-) TimerEvent: {}
+[0.598148] (custom_msgs) StdoutLine: {'line': b'[  4%] Built target custom_msgs__cpp\n'}
+[0.608554] (-) TimerEvent: {}
+[0.620647] (custom_msgs) StdoutLine: {'line': b'[ 26%] Built target custom_msgs__rosidl_generator_c\n'}
+[0.708816] (-) TimerEvent: {}
+[0.800558] (custom_msgs) StdoutLine: {'line': b'[ 35%] Built target custom_msgs__rosidl_typesupport_introspection_c\n'}
+[0.802446] (custom_msgs) StdoutLine: {'line': b'[ 44%] Built target custom_msgs__rosidl_typesupport_c\n'}
+[0.809759] (-) TimerEvent: {}
+[0.812934] (custom_msgs) StdoutLine: {'line': b'[ 61%] Built target custom_msgs__rosidl_typesupport_introspection_cpp\n'}
+[0.814276] (custom_msgs) StdoutLine: {'line': b'[ 69%] Built target custom_msgs__rosidl_typesupport_cpp\n'}
+[0.816015] (custom_msgs) StdoutLine: {'line': b'[ 72%] Built target custom_msgs__rosidl_typesupport_fastrtps_c\n'}
+[0.909993] (-) TimerEvent: {}
+[0.991214] (custom_msgs) StdoutLine: {'line': b'[ 81%] Built target custom_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[1.010225] (-) TimerEvent: {}
+[1.110968] (-) TimerEvent: {}
+[1.129239] (custom_msgs) StdoutLine: {'line': b'[ 81%] Built target custom_msgs\n'}
+[1.211163] (-) TimerEvent: {}
+[1.284759] (custom_msgs) StdoutLine: {'line': b'[ 83%] Built target custom_msgs__py\n'}
+[1.311471] (-) TimerEvent: {}
+[1.411979] (-) TimerEvent: {}
+[1.453623] (custom_msgs) StdoutLine: {'line': b'[ 90%] Built target custom_msgs__rosidl_generator_py\n'}
+[1.512217] (-) TimerEvent: {}
+[1.515245] (custom_msgs) StdoutLine: {'line': b'[ 90%] Built target ament_cmake_python_sync_custom_msgs\n'}
+[1.609300] (custom_msgs) StdoutLine: {'line': b'[ 93%] Built target custom_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[1.612498] (-) TimerEvent: {}
+[1.617096] (custom_msgs) StdoutLine: {'line': b'[ 96%] Built target custom_msgs_s__rosidl_typesupport_c\n'}
+[1.624295] (custom_msgs) StdoutLine: {'line': b'[100%] Built target custom_msgs_s__rosidl_typesupport_introspection_c\n'}
+[1.712751] (-) TimerEvent: {}
+[1.813271] (-) TimerEvent: {}
+[1.913795] (-) TimerEvent: {}
+[2.014374] (-) TimerEvent: {}
+[2.114960] (-) TimerEvent: {}
+[2.215473] (-) TimerEvent: {}
+[2.315887] (-) TimerEvent: {}
+[2.416469] (-) TimerEvent: {}
+[2.516968] (-) TimerEvent: {}
+[2.617678] (-) TimerEvent: {}
+[2.718309] (-) TimerEvent: {}
+[2.818939] (-) TimerEvent: {}
+[2.919546] (-) TimerEvent: {}
+[3.008916] (custom_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[3.019847] (-) TimerEvent: {}
+[3.120303] (-) TimerEvent: {}
+[3.124619] (custom_msgs) StdoutLine: {'line': b'writing custom_msgs.egg-info/PKG-INFO\n'}
+[3.126389] (custom_msgs) StdoutLine: {'line': b'writing dependency_links to custom_msgs.egg-info/dependency_links.txt\n'}
+[3.127576] (custom_msgs) StdoutLine: {'line': b'writing top-level names to custom_msgs.egg-info/top_level.txt\n'}
+[3.220555] (-) TimerEvent: {}
+[3.321171] (-) TimerEvent: {}
+[3.421838] (-) TimerEvent: {}
+[3.504831] (custom_msgs) StdoutLine: {'line': b"reading manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[3.510690] (custom_msgs) StdoutLine: {'line': b"writing manifest file 'custom_msgs.egg-info/SOURCES.txt'\n"}
+[3.522078] (-) TimerEvent: {}
+[3.622685] (-) TimerEvent: {}
+[3.712546] (custom_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_custom_msgs_egg\n'}
+[3.722925] (-) TimerEvent: {}
+[3.798538] (custom_msgs) CommandEnded: {'returncode': 0}
+[3.803536] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[3.823224] (-) TimerEvent: {}
+[3.867110] (custom_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs'], 'cwd': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'AUTO_LOCAL_ROUTING': 'false', 'RUBBER_DUCK_AGENT': 'true', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT': 'false', 'AI_AGENT': 'github_copilot_vscode_agent', 'USER': 'pranav', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/lib/x86_64-linux-gnu:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'HOME': '/home/pranav', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'GIT_CONFIG_COUNT': '3', 'OLDPWD': '/home/pranav', 'DESKTOP_SESSION': 'ubuntu', 'COPILOT_CLI_RUN_AS_NODE': '1', 'IM_CONFIG_ENTRY': 'profile', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '4686', 'COPILOT_CLI': '1', 'SYSTEMD_EXEC_PID': '5133', 'SSH_ASKPASS': '', 'ANTHROPIC_ADVISOR': 'false', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200949', 'COPILOT_HOME': '/home/pranav/.copilot', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GIT_OPTIONAL_LOCKS': '0', 'WAYLAND_DISPLAY': 'wayland-0', 'GCM_INTERACTIVE': 'Never', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pranav', '_': '/usr/bin/colcon', 'MANAGERPIDFDID': '41320', 'JOURNAL_STREAM': '10:34499', 'ROS_VERSION': '2', 'SKILL_CHAR_BUDGET': '30000', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pranav', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINML_LOCAL_MODELS': 'false', 'FC_FONTATIONS': '1', 'GIT_CONFIG_VALUE_0': 'explicit', 'PATH': '/home/pranav/.cargo/bin:/home/pranav/.local/bin:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/share/code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/linux-x64:/usr/share/code/resources/app/node_modules.asar.unpacked/@github/copilot-sdk-linux-x64/ripgrep/bin/linux-x64', 'INVOCATION_ID': '09cd87b7f89b452595424e40759c41b0', 'GIT_CONFIG_VALUE_1': 'never', 'CLAUDE_CODE_DISABLE_PRECOMPACT_SKIP': '1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': 'unix:/tmp/.X11-unix/X1', 'GIT_CONFIG_VALUE_2': 'false', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.67C1X3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gcr/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/lyrical', 'COPILOT_AGENT_SESSION_ID': '8d8e97c4-d122-4464-a0c4-d5f845302526', 'SHELL': '/usr/bin/zsh', 'COPILOT_RUNTIME_PROCESS_FILE_LOGGING': '1', 'GIT_TERMINAL_PROMPT': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'GIT_CONFIG_KEY_1': 'credential.interactive', 'GIT_CONFIG_KEY_2': 'core.fsmonitor', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'COPILOT_MCP_APPS': 'true', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', 'AUTO_APPROVAL': 'true', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_SESSION_EXTRA_DEVICE_ACCESS': 'render:accel', 'COPILOT_ENABLE_BUILTIN_GITHUB_MCP': 'true', 'PYTHONPATH': '/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT_MODEL': 'gpt-5.6-luna', 'COLCON': '1', 'QT_IM_MODULES': 'wayland;ibus', 'COPILOT_CLI_ENABLED_FEATURE_FLAGS': 'SHELL_SPAWN_BACKEND', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor:/opt/ros/lyrical'}), 'shell': False}
+[3.917151] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.920645] (custom_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[3.922906] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[3.923666] (-) TimerEvent: {}
+[3.924252] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.json\n'}
+[3.925794] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.json\n'}
+[3.927074] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.json\n'}
+[3.928439] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.json\n'}
+[3.932282] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__functions.h\n'}
+[3.934027] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__struct.h\n'}
+[3.934680] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__type_support.h\n'}
+[3.935700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__functions.h\n'}
+[3.936965] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__struct.h\n'}
+[3.938137] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__type_support.h\n'}
+[3.938688] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/fov.h\n'}
+[3.939208] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/info.h\n'}
+[3.940714] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.941227] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/battery.h\n'}
+[3.941700] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__functions.h\n'}
+[3.942102] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__struct.h\n'}
+[3.942783] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__type_support.h\n'}
+[3.943535] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__functions.h\n'}
+[3.943839] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__struct.h\n'}
+[3.944980] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__type_support.h\n'}
+[3.945574] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/move.h\n'}
+[3.946804] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/library_path.sh\n'}
+[3.947881] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/library_path.dsv\n'}
+[3.950936] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_fastrtps_c.h\n'}
+[3.951994] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_fastrtps_c.h\n'}
+[3.953183] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.954683] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_fastrtps_c.h\n'}
+[3.955202] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_fastrtps_c.h\n'}
+[3.956987] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_introspection_c.h\n'}
+[3.958382] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_introspection_c.h\n'}
+[3.959748] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.960691] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_introspection_c.h\n'}
+[3.961198] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_introspection_c.h\n'}
+[3.963069] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__builder.hpp\n'}
+[3.963793] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__struct.hpp\n'}
+[3.964296] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__traits.hpp\n'}
+[3.964924] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__type_support.hpp\n'}
+[3.965673] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__builder.hpp\n'}
+[3.966509] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__struct.hpp\n'}
+[3.967676] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__traits.hpp\n'}
+[3.968701] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__type_support.hpp\n'}
+[3.969677] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/fov.hpp\n'}
+[3.970269] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/info.hpp\n'}
+[3.970856] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.971656] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/battery.hpp\n'}
+[3.972202] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__builder.hpp\n'}
+[3.972715] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__struct.hpp\n'}
+[3.973236] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__traits.hpp\n'}
+[3.974061] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__type_support.hpp\n'}
+[3.974800] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__builder.hpp\n'}
+[3.975732] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__struct.hpp\n'}
+[3.976659] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__traits.hpp\n'}
+[3.977534] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__type_support.hpp\n'}
+[3.978218] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/move.hpp\n'}
+[3.982390] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.983760] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.985021] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.986296] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.986885] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.988743] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/fov__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.989812] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/msg/detail/info__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.990483] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/battery__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.991000] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/include/custom_msgs/custom_msgs/srv/detail/move__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.992605] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/pythonpath.sh\n'}
+[3.993706] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/pythonpath.dsv\n'}
+[3.994992] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[3.996382] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[3.997867] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so\n'}
+[4.000174] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/Cargo.toml\n'}
+[4.001284] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/build.rs\n'}
+[4.002263] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/lib.rs\n'}
+[4.003606] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/msg.rs\n'}
+[4.004464] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/msg/rmw.rs\n'}
+[4.005529] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/srv.rs\n'}
+[4.005835] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/rust/src/srv/rmw.rs\n'}
+[4.006778] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.idl\n'}
+[4.008207] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.idl\n'}
+[4.010001] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.idl\n'}
+[4.011467] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.idl\n'}
+[4.012730] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Fov.msg\n'}
+[4.013733] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/msg/Info.msg\n'}
+[4.014555] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Battery.srv\n'}
+[4.015513] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/srv/Move.srv\n'}
+[4.017139] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[4.018460] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[4.019444] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[4.020483] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[4.021452] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/path.sh\n'}
+[4.022542] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/environment/path.dsv\n'}
+[4.023936] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.bash\n'}
+[4.024424] (-) TimerEvent: {}
+[4.024857] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.fish\n'}
+[4.026087] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.sh\n'}
+[4.027014] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.zsh\n'}
+[4.028471] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/local_setup.dsv\n'}
+[4.029732] (custom_msgs) StdoutLine: {'line': b'-- Symlinking: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.dsv\n'}
+[4.091791] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/ament_index/resource_index/packages/custom_msgs\n'}
+[4.093766] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/PKG-INFO\n'}
+[4.095128] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/SOURCES.txt\n'}
+[4.095952] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/dependency_links.txt\n'}
+[4.096590] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs-0.0.0-py3.14.egg-info/top_level.txt\n'}
+[4.100805] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/__init__.py\n'}
+[4.102657] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[4.103765] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.105194] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.105754] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_c.so\n'}
+[4.106995] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[4.107610] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/custom_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[4.108585] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/__init__.py\n'}
+[4.110034] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_fov.py\n'}
+[4.110842] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_fov_s.c\n'}
+[4.111875] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_info.py\n'}
+[4.112669] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg/_info_s.c\n'}
+[4.113529] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/py.typed\n'}
+[4.114677] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/__init__.py\n'}
+[4.115881] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_battery.py\n'}
+[4.117777] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_battery_s.c\n'}
+[4.118416] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_move.py\n'}
+[4.119305] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv/_move_s.c\n'}
+[4.120474] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.121485] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.122916] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.124092] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.124680] (-) TimerEvent: {}
+[4.125833] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.127801] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.129524] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.130905] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/rosidl_cmake_aggregate_target-extras.cmake\n'}
+[4.132701] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[4.136032] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[4.136624] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.xml\n'}
+[4.137591] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[4.139674] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.142868] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.145381] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[4.148206] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.150773] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.152932] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[4.156132] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/libcustom_msgs__rosidl_generator_py.so\n'}
+[4.158590] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[4.160863] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.162580] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.164594] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.165003] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.165299] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.165747] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.166555] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.166925] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.167374] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.167686] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.168064] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.168716] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.169356] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.169780] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.170068] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport.cmake\n'}
+[4.170349] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.224917] (-) TimerEvent: {}
+[4.325467] (-) TimerEvent: {}
+[4.426030] (-) TimerEvent: {}
+[4.474449] (custom_msgs) StdoutLine: {'line': b"Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs'...\n"}
+[4.475205] (custom_msgs) StdoutLine: {'line': b"Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/msg'...\n"}
+[4.475702] (custom_msgs) StdoutLine: {'line': b"Listing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages/custom_msgs/srv'...\n"}
+[4.526281] (-) TimerEvent: {}
+[4.530205] (custom_msgs) CommandEnded: {'returncode': 0}
+[4.628552] (-) TimerEvent: {}
+[4.721267] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[4.728455] (world_map) JobStarted: {'identifier': 'world_map'}
+[4.728814] (-) TimerEvent: {}
+[4.829248] (-) TimerEvent: {}
+[4.929747] (-) TimerEvent: {}
+[5.030379] (-) TimerEvent: {}
+[5.130901] (-) TimerEvent: {}
+[5.231444] (-) TimerEvent: {}
+[5.331844] (-) TimerEvent: {}
+[5.432390] (-) TimerEvent: {}
+[5.532930] (-) TimerEvent: {}
+[5.633470] (-) TimerEvent: {}
+[5.734067] (-) TimerEvent: {}
+[5.834547] (-) TimerEvent: {}
+[5.935177] (-) TimerEvent: {}
+[6.035761] (-) TimerEvent: {}
+[6.136288] (-) TimerEvent: {}
+[6.236746] (-) TimerEvent: {}
+[6.337260] (-) TimerEvent: {}
+[6.437786] (-) TimerEvent: {}
+[6.538270] (-) TimerEvent: {}
+[6.638784] (-) TimerEvent: {}
+[6.739258] (-) TimerEvent: {}
+[6.839829] (-) TimerEvent: {}
+[6.940424] (-) TimerEvent: {}
+[7.040887] (-) TimerEvent: {}
+[7.141554] (-) TimerEvent: {}
+[7.242073] (-) TimerEvent: {}
+[7.342670] (-) TimerEvent: {}
+[7.443183] (-) TimerEvent: {}
+[7.543828] (-) TimerEvent: {}
+[7.644347] (-) TimerEvent: {}
+[7.744868] (-) TimerEvent: {}
+[7.845486] (-) TimerEvent: {}
+[7.945954] (-) TimerEvent: {}
+[8.046520] (-) TimerEvent: {}
+[8.146983] (-) TimerEvent: {}
+[8.247463] (-) TimerEvent: {}
+[8.347987] (-) TimerEvent: {}
+[8.448577] (-) TimerEvent: {}
+[8.549075] (-) TimerEvent: {}
+[8.649570] (-) TimerEvent: {}
+[8.750140] (-) TimerEvent: {}
+[8.850717] (-) TimerEvent: {}
+[8.951184] (-) TimerEvent: {}
+[9.052559] (-) TimerEvent: {}
+[9.153027] (-) TimerEvent: {}
+[9.253650] (-) TimerEvent: {}
+[9.354123] (-) TimerEvent: {}
+[9.454668] (-) TimerEvent: {}
+[9.555129] (-) TimerEvent: {}
+[9.584410] (world_map) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/world_map', 'build', '--build-base', '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build', 'install', '--record', '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log', '--install-scripts', '$base/lib/world_map', '--single-version-externally-managed', 'install_data'], 'cwd': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'EGL_PLATFORM': 'wayland', 'AUTO_LOCAL_ROUTING': 'false', 'RUBBER_DUCK_AGENT': 'true', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT': 'false', 'AI_AGENT': 'github_copilot_vscode_agent', 'USER': 'pranav', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib:/opt/ros/lyrical/opt/gz_math_vendor/lib:/opt/ros/lyrical/opt/gz_utils_vendor/lib:/opt/ros/lyrical/opt/rviz_ogre_vendor/lib:/opt/ros/lyrical/lib/x86_64-linux-gnu:/opt/ros/lyrical/opt/gz_cmake_vendor/lib:/opt/ros/lyrical/lib', 'HOME': '/home/pranav', 'CHROME_DESKTOP': 'com.microsoft.VSCode.desktop', 'GIT_CONFIG_COUNT': '3', 'OLDPWD': '/home/pranav', 'DESKTOP_SESSION': 'ubuntu', 'COPILOT_CLI_RUN_AS_NODE': '1', 'IM_CONFIG_ENTRY': 'profile', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/com.microsoft.VSCode.desktop', 'ROS_PYTHON_VERSION': '3', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '4686', 'COPILOT_CLI': '1', 'SYSTEMD_EXEC_PID': '5133', 'SSH_ASKPASS': '', 'ANTHROPIC_ADVISOR': 'false', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '200949', 'COPILOT_HOME': '/home/pranav/.copilot', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'GIT_OPTIONAL_LOCKS': '0', 'WAYLAND_DISPLAY': 'wayland-0', 'GCM_INTERACTIVE': 'Never', 'ROS_DISTRO': 'lyrical', 'LOGNAME': 'pranav', '_': '/usr/bin/colcon', 'MANAGERPIDFDID': '41320', 'JOURNAL_STREAM': '10:34499', 'ROS_VERSION': '2', 'SKILL_CHAR_BUDGET': '30000', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pranav', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'WINML_LOCAL_MODELS': 'false', 'FC_FONTATIONS': '1', 'GIT_CONFIG_VALUE_0': 'explicit', 'PATH': '/home/pranav/.cargo/bin:/home/pranav/.local/bin:/opt/ros/lyrical/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/share/code/resources/app/node_modules.asar.unpacked/@vscode/ripgrep-universal/bin/linux-x64:/usr/share/code/resources/app/node_modules.asar.unpacked/@github/copilot-sdk-linux-x64/ripgrep/bin/linux-x64', 'INVOCATION_ID': '09cd87b7f89b452595424e40759c41b0', 'GIT_CONFIG_VALUE_1': 'never', 'CLAUDE_CODE_DISABLE_PRECOMPACT_SKIP': '1', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': 'unix:/tmp/.X11-unix/X1', 'GIT_CONFIG_VALUE_2': 'false', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.67C1X3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/gcr/ssh', 'AMENT_PREFIX_PATH': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:/opt/ros/lyrical', 'COPILOT_AGENT_SESSION_ID': '8d8e97c4-d122-4464-a0c4-d5f845302526', 'SHELL': '/usr/bin/zsh', 'COPILOT_RUNTIME_PROCESS_FILE_LOGGING': '1', 'GIT_TERMINAL_PROMPT': '0', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GIT_CONFIG_KEY_0': 'safe.bareRepository', 'GIT_CONFIG_KEY_1': 'credential.interactive', 'GIT_CONFIG_KEY_2': 'core.fsmonitor', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'COPILOT_MCP_APPS': 'true', 'GJS_DEBUG_OUTPUT': 'stderr', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map', 'AUTO_APPROVAL': 'true', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'XDG_SESSION_EXTRA_DEVICE_ACCESS': 'render:accel', 'COPILOT_ENABLE_BUILTIN_GITHUB_MCP': 'true', 'PYTHONPATH': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages:/opt/ros/lyrical/opt/gz_math_vendor/lib/python:/opt/ros/lyrical/lib/python3.14/site-packages', 'COPILOT_EXP_COPILOT_CLI_EXECUTION_SUBAGENT_MODEL': 'gpt-5.6-luna', 'COLCON': '1', 'QT_IM_MODULES': 'wayland;ibus', 'COPILOT_CLI_ENABLED_FEATURE_FLAGS': 'SHELL_SPAWN_BACKEND', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:/opt/ros/lyrical/opt/gz_math_vendor:/opt/ros/lyrical/opt/gz_utils_vendor:/opt/ros/lyrical/opt/gz_cmake_vendor'}), 'shell': False}
+[9.655388] (-) TimerEvent: {}
+[9.755804] (-) TimerEvent: {}
+[9.856405] (-) TimerEvent: {}
+[9.957030] (-) TimerEvent: {}
+[10.057484] (-) TimerEvent: {}
+[10.158028] (-) TimerEvent: {}
+[10.258650] (-) TimerEvent: {}
+[10.359143] (-) TimerEvent: {}
+[10.459615] (-) TimerEvent: {}
+[10.560066] (-) TimerEvent: {}
+[10.660660] (-) TimerEvent: {}
+[10.761186] (-) TimerEvent: {}
+[10.861720] (-) TimerEvent: {}
+[10.962212] (-) TimerEvent: {}
+[11.062751] (-) TimerEvent: {}
+[11.163250] (-) TimerEvent: {}
+[11.263717] (-) TimerEvent: {}
+[11.364228] (-) TimerEvent: {}
+[11.385558] (world_map) StdoutLine: {'line': b'running egg_info\n'}
+[11.464544] (-) TimerEvent: {}
+[11.512257] (world_map) StdoutLine: {'line': b'writing ../../build/world_map/world_map.egg-info/PKG-INFO\n'}
+[11.515639] (world_map) StdoutLine: {'line': b'writing dependency_links to ../../build/world_map/world_map.egg-info/dependency_links.txt\n'}
+[11.516935] (world_map) StdoutLine: {'line': b'writing entry points to ../../build/world_map/world_map.egg-info/entry_points.txt\n'}
+[11.518081] (world_map) StdoutLine: {'line': b'writing requirements to ../../build/world_map/world_map.egg-info/requires.txt\n'}
+[11.519103] (world_map) StdoutLine: {'line': b'writing top-level names to ../../build/world_map/world_map.egg-info/top_level.txt\n'}
+[11.564786] (-) TimerEvent: {}
+[11.665272] (-) TimerEvent: {}
+[11.765838] (-) TimerEvent: {}
+[11.787806] (world_map) StdoutLine: {'line': b"reading manifest file '../../build/world_map/world_map.egg-info/SOURCES.txt'\n"}
+[11.795043] (world_map) StdoutLine: {'line': b"writing manifest file '../../build/world_map/world_map.egg-info/SOURCES.txt'\n"}
+[11.796710] (world_map) StdoutLine: {'line': b'running build\n'}
+[11.797752] (world_map) StdoutLine: {'line': b'running build_py\n'}
+[11.798808] (world_map) StdoutLine: {'line': b'copying world_map/battery_node.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map\n'}
+[11.800178] (world_map) StdoutLine: {'line': b'copying world_map/explore_node.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map\n'}
+[11.801658] (world_map) StdoutLine: {'line': b'copying world_map/map_node.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map\n'}
+[11.803049] (world_map) StdoutLine: {'line': b'copying world_map/__init__.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map\n'}
+[11.805054] (world_map) StdoutLine: {'line': b'copying world_map/py.typed -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map\n'}
+[11.806405] (world_map) StdoutLine: {'line': b'running install\n'}
+[11.832920] (world_map) StdoutLine: {'line': b'running install_lib\n'}
+[11.866115] (-) TimerEvent: {}
+[11.966610] (-) TimerEvent: {}
+[11.969247] (world_map) StdoutLine: {'line': b'copying /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build/lib/world_map/explore_node.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map\n'}
+[11.975436] (world_map) StdoutLine: {'line': b'byte-compiling /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map/explore_node.py to explore_node.cpython-314.pyc\n'}
+[12.000457] (world_map) StdoutLine: {'line': b'running install_data\n'}
+[12.002092] (world_map) StdoutLine: {'line': b'copying resource/world_map -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/ament_index/resource_index/packages\n'}
+[12.003214] (world_map) StdoutLine: {'line': b'copying package.xml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map\n'}
+[12.005082] (world_map) StdoutLine: {'line': b'copying config/rover.params.yaml -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/config\n'}
+[12.006364] (world_map) StdoutLine: {'line': b'copying launch/map.launch.py -> /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/launch\n'}
+[12.007595] (world_map) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.066843] (-) TimerEvent: {}
+[12.144776] (world_map) StdoutLine: {'line': b"removing '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map-0.0.0-py3.14.egg-info' (and everything under it)\n"}
+[12.146493] (world_map) StdoutLine: {'line': b'Copying ../../build/world_map/world_map.egg-info to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages/world_map-0.0.0-py3.14.egg-info\n'}
+[12.153993] (world_map) StdoutLine: {'line': b'running install_scripts\n'}
+[12.167069] (-) TimerEvent: {}
+[12.267574] (-) TimerEvent: {}
+[12.368265] (-) TimerEvent: {}
+[12.468798] (-) TimerEvent: {}
+[12.569284] (-) TimerEvent: {}
+[12.669864] (-) TimerEvent: {}
+[12.770505] (-) TimerEvent: {}
+[12.833811] (world_map) StdoutLine: {'line': b'Installing battery_node script to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/world_map\n'}
+[12.835503] (world_map) StdoutLine: {'line': b'Installing explore_node script to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/world_map\n'}
+[12.836761] (world_map) StdoutLine: {'line': b'Installing map_node script to /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/world_map\n'}
+[12.838833] (world_map) StdoutLine: {'line': b"writing list of installed files to '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log'\n"}
+[12.870740] (-) TimerEvent: {}
+[12.971208] (-) TimerEvent: {}
+[13.014970] (world_map) CommandEnded: {'returncode': 0}
+[13.060971] (world_map) JobEnded: {'identifier': 'world_map', 'rc': 0}
+[13.064410] (-) EventReactorShutdown: {}

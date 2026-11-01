@@ -92,6 +92,7 @@ rosidl_generator_c/custom_msgs/msg/fov.h: rosidl_adapter/custom_msgs/msg/Fov.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: rosidl_adapter/custom_msgs/msg/Info.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: rosidl_adapter/custom_msgs/srv/Battery.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_c/custom_msgs/msg/fov.h: rosidl_adapter/custom_msgs/srv/SwitchMode.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/custom_msgs/msg/fov.h: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl
@@ -143,6 +144,18 @@ rosidl_generator_c/custom_msgs/srv/detail/move__struct.h: rosidl_generator_c/cus
 rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h: rosidl_generator_c/custom_msgs/msg/fov.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h
 
+rosidl_generator_c/custom_msgs/srv/switch_mode.h: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/switch_mode.h
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.h: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.h
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__struct.h: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__struct.h
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.h: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.h
+
 rosidl_generator_c/custom_msgs/msg/detail/fov__description.c: rosidl_generator_c/custom_msgs/msg/fov.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/msg/detail/fov__description.c
 
@@ -178,6 +191,15 @@ rosidl_generator_c/custom_msgs/srv/detail/move__functions.c: rosidl_generator_c/
 
 rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c: rosidl_generator_c/custom_msgs/msg/fov.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c
+
+rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c: rosidl_generator_c/custom_msgs/msg/fov.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c
 
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/codegen:
 .PHONY : CMakeFiles/custom_msgs__rosidl_generator_c.dir/codegen
@@ -350,6 +372,48 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/sr
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c" -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.s
 
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o -c "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c"
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c" > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c" -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.s
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o -c "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c"
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c" > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c" -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.s
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/flags.make
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o -MF CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o.d -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o -c "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c"
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c" > CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.i
+
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c" -o CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.s
+
 # Object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/fov__description.c.o" \
@@ -363,7 +427,10 @@ custom_msgs__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/battery__type_support.c.o" \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__description.c.o" \
 "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__functions.c.o" \
-"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.o"
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o" \
+"CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o"
 
 # External object files for target custom_msgs__rosidl_generator_c
 custom_msgs__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -380,6 +447,9 @@ libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__description.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__functions.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o
+libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/build.make
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/compiler_depend.ts
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/lyrical/lib/libservice_msgs__rosidl_generator_c.so
@@ -388,7 +458,7 @@ libcustom_msgs__rosidl_generator_c.so: /opt/ros/lyrical/lib/librosidl_runtime_c.
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/lyrical/lib/librcutils.so
 libcustom_msgs__rosidl_generator_c.so: /opt/ros/lyrical/lib/librosidl_buffer.so
 libcustom_msgs__rosidl_generator_c.so: CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking C shared library libcustom_msgs__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/custom_msgs__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -426,7 +496,14 @@ CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/move__struct.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__struct.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.h
 CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/move.h
+CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend: rosidl_generator_c/custom_msgs/srv/switch_mode.h
 	cd "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles/custom_msgs__rosidl_generator_c.dir/DependInfo.cmake" "--color=$(COLOR)" custom_msgs__rosidl_generator_c
 .PHONY : CMakeFiles/custom_msgs__rosidl_generator_c.dir/depend
 

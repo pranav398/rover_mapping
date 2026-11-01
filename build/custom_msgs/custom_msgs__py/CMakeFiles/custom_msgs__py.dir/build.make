@@ -73,12 +73,14 @@ include /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/cu
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_info.py
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_battery.py
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_move.py
+/run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_switch_mode.py
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/__init__.py
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/__init__.py
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_fov_s.c
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/msg/_info_s.c
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_battery_s.c
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_move_s.c
+/run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c
 
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/lyrical/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/lyrical/lib/python3.14/site-packages/rosidl_generator_py/__init__.py
@@ -98,6 +100,7 @@ rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/msg/Info.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/srv/Battery.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/custom_msgs/srv/SwitchMode.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl
@@ -122,6 +125,9 @@ rosidl_generator_py/custom_msgs/srv/_battery.py: rosidl_generator_py/custom_msgs
 rosidl_generator_py/custom_msgs/srv/_move.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_move.py
 
+rosidl_generator_py/custom_msgs/srv/_switch_mode.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_switch_mode.py
+
 rosidl_generator_py/custom_msgs/msg/__init__.py: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/msg/__init__.py
 
@@ -140,6 +146,9 @@ rosidl_generator_py/custom_msgs/srv/_battery_s.c: rosidl_generator_py/custom_msg
 rosidl_generator_py/custom_msgs/srv/_move_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_move_s.c
 
+rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c: rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c
+
 /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py.dir/codegen:
 .PHONY : /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py.dir/codegen
 
@@ -157,6 +166,8 @@ custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_battery.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_battery_s.c
 custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_move.py
 custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_move_s.c
+custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_switch_mode.py
+custom_msgs__py: rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c
 custom_msgs__py: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/custom_msgs__py/CMakeFiles/custom_msgs__py.dir/build.make
 .PHONY : custom_msgs__py
 

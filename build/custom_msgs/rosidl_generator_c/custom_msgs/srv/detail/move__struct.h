@@ -25,7 +25,7 @@ typedef struct custom_msgs__srv__Move_Request
 {
   int32_t delta_x;
   int32_t delta_y;
-  int32_t deduction;
+  float deduction;
 } custom_msgs__srv__Move_Request;
 
 // Struct for a sequence of custom_msgs__srv__Move_Request.

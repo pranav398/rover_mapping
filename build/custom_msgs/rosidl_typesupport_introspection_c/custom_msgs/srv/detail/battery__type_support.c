@@ -34,7 +34,7 @@ void custom_msgs__srv__Battery_Request__rosidl_typesupport_introspection_c__Batt
 static rosidl_typesupport_introspection_c__MessageMember custom_msgs__srv__Battery_Request__rosidl_typesupport_introspection_c__Battery_Request_message_member_array[1] = {
   {
     "deduction",  // name
-    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
     false,  // is key

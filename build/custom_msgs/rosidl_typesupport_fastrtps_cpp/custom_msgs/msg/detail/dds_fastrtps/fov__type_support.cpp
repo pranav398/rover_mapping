@@ -44,8 +44,20 @@ cdr_serialize(
   // Member: y
   cdr << ros_message.y;
 
+  // Member: battery
+  cdr << ros_message.battery;
+
   // Member: fov_size
   cdr << ros_message.fov_size;
+
+  // Member: target_x
+  cdr << ros_message.target_x;
+
+  // Member: target_y
+  cdr << ros_message.target_y;
+
+  // Member: target_rad
+  cdr << ros_message.target_rad;
 
   // Member: height
   {
@@ -67,6 +79,11 @@ cdr_serialize(
     cdr << ros_message.wetness;
   }
 
+  // Member: goal_cells
+  {
+    cdr << ros_message.goal_cells;
+  }
+
   return true;
 }
 
@@ -82,8 +99,20 @@ cdr_deserialize(
   // Member: y
   cdr >> ros_message.y;
 
+  // Member: battery
+  cdr >> ros_message.battery;
+
   // Member: fov_size
   cdr >> ros_message.fov_size;
+
+  // Member: target_x
+  cdr >> ros_message.target_x;
+
+  // Member: target_y
+  cdr >> ros_message.target_y;
+
+  // Member: target_rad
+  cdr >> ros_message.target_rad;
 
   // Member: height
   {
@@ -103,6 +132,11 @@ cdr_deserialize(
   // Member: wetness
   {
     cdr >> ros_message.wetness;
+  }
+
+  // Member: goal_cells
+  {
+    cdr >> ros_message.goal_cells;
   }
 
   return true;
@@ -126,8 +160,16 @@ cdr_serialize_with_endpoint(
     cdr << ros_message.x;
     // Member: y
     cdr << ros_message.y;
+    // Member: battery
+    cdr << ros_message.battery;
     // Member: fov_size
     cdr << ros_message.fov_size;
+    // Member: target_x
+    cdr << ros_message.target_x;
+    // Member: target_y
+    cdr << ros_message.target_y;
+    // Member: target_rad
+    cdr << ros_message.target_rad;
     // Member: height
     {
       cdr << ros_message.height;
@@ -143,6 +185,10 @@ cdr_serialize_with_endpoint(
     // Member: wetness
     {
       cdr << ros_message.wetness;
+    }
+    // Member: goal_cells
+    {
+      cdr << ros_message.goal_cells;
     }
   } catch (const std::exception & e) {
     RCUTILS_LOG_ERROR_NAMED(
@@ -172,8 +218,20 @@ cdr_deserialize_with_endpoint(
   // Member: y
   cdr >> ros_message.y;
 
+  // Member: battery
+  cdr >> ros_message.battery;
+
   // Member: fov_size
   cdr >> ros_message.fov_size;
+
+  // Member: target_x
+  cdr >> ros_message.target_x;
+
+  // Member: target_y
+  cdr >> ros_message.target_y;
+
+  // Member: target_rad
+  cdr >> ros_message.target_rad;
 
   // Member: height
   {
@@ -193,6 +251,11 @@ cdr_deserialize_with_endpoint(
   // Member: wetness
   {
     cdr >> ros_message.wetness;
+  }
+
+  // Member: goal_cells
+  {
+    cdr >> ros_message.goal_cells;
   }
 
   return true;
@@ -225,9 +288,37 @@ get_serialized_size(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
+  // Member: battery
+  {
+    size_t item_size = sizeof(ros_message.battery);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Member: fov_size
   {
     size_t item_size = sizeof(ros_message.fov_size);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_x
+  {
+    size_t item_size = sizeof(ros_message.target_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_y
+  {
+    size_t item_size = sizeof(ros_message.target_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_rad
+  {
+    size_t item_size = sizeof(ros_message.target_rad);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -268,6 +359,16 @@ get_serialized_size(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     size_t item_size = sizeof(ros_message.wetness[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: goal_cells
+  {
+    size_t array_size = ros_message.goal_cells.size();
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.goal_cells[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -309,7 +410,35 @@ max_serialized_size_Fov(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // Member: battery
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
   // Member: fov_size
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: target_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: target_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // Member: target_rad
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -360,6 +489,16 @@ max_serialized_size_Fov(
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
+  // Member: goal_cells
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -369,7 +508,7 @@ max_serialized_size_Fov(
     using DataType = custom_msgs::msg::Fov;
     is_plain =
       (
-      offsetof(DataType, wetness) +
+      offsetof(DataType, goal_cells) +
       last_member_size
       ) == ret_val;
   }
@@ -389,8 +528,20 @@ cdr_serialize_key(
   // Member: y
   cdr << ros_message.y;
 
+  // Member: battery
+  cdr << ros_message.battery;
+
   // Member: fov_size
   cdr << ros_message.fov_size;
+
+  // Member: target_x
+  cdr << ros_message.target_x;
+
+  // Member: target_y
+  cdr << ros_message.target_y;
+
+  // Member: target_rad
+  cdr << ros_message.target_rad;
 
   // Member: height
   {
@@ -410,6 +561,11 @@ cdr_serialize_key(
   // Member: wetness
   {
     cdr << ros_message.wetness;
+  }
+
+  // Member: goal_cells
+  {
+    cdr << ros_message.goal_cells;
   }
 
   return true;
@@ -442,9 +598,37 @@ get_serialized_size_key(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
+  // Member: battery
+  {
+    size_t item_size = sizeof(ros_message.battery);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Member: fov_size
   {
     size_t item_size = sizeof(ros_message.fov_size);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_x
+  {
+    size_t item_size = sizeof(ros_message.target_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_y
+  {
+    size_t item_size = sizeof(ros_message.target_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: target_rad
+  {
+    size_t item_size = sizeof(ros_message.target_rad);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -485,6 +669,16 @@ get_serialized_size_key(
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     size_t item_size = sizeof(ros_message.wetness[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Member: goal_cells
+  {
+    size_t array_size = ros_message.goal_cells.size();
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    size_t item_size = sizeof(ros_message.goal_cells[0]);
     current_alignment += array_size * item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -527,7 +721,39 @@ max_serialized_size_key_Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: battery
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Member: fov_size
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: target_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: target_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: target_rad
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -583,6 +809,17 @@ max_serialized_size_key_Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Member: goal_cells
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -591,7 +828,7 @@ max_serialized_size_key_Fov(
     using DataType = custom_msgs::msg::Fov;
     is_plain =
       (
-      offsetof(DataType, wetness) +
+      offsetof(DataType, goal_cells) +
       last_member_size
       ) == ret_val;
   }

@@ -10,7 +10,15 @@ module custom_msgs {
 
       int32 y;
 
+      float battery;
+
       uint32 fov_size;
+
+      int32 target_x;
+
+      int32 target_y;
+
+      int32 target_rad;
 
       sequence<float> height;
 
@@ -19,6 +27,8 @@ module custom_msgs {
       sequence<float> muddiness;
 
       sequence<float> wetness;
+
+      sequence<boolean> goal_cells;
     };
   };
 };

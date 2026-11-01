@@ -89,6 +89,7 @@ rosidl_generator_rs/custom_msgs/rust/src/lib.rs: rosidl_adapter/custom_msgs/msg/
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: rosidl_adapter/custom_msgs/msg/Info.idl
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: rosidl_adapter/custom_msgs/srv/Battery.idl
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_rs/custom_msgs/rust/src/lib.rs: rosidl_adapter/custom_msgs/srv/SwitchMode.idl
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_rs/custom_msgs/rust/src/lib.rs: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl

@@ -5,6 +5,7 @@ libcustom_msgs__rosidl_generator_py.so: \
   CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/msg/_info_s.c.o \
   CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_battery_s.c.o \
   CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_move_s.c.o \
+  CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c.o \
   libcustom_msgs__rosidl_typesupport_c.so \
   /opt/ros/lyrical/lib/libservice_msgs__rosidl_typesupport_fastrtps_cpp.so \
   /opt/ros/lyrical/lib/libservice_msgs__rosidl_typesupport_introspection_c.so \
@@ -68,6 +69,8 @@ CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/
 CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_battery_s.c.o:
 
 CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_move_s.c.o:
+
+CMakeFiles/custom_msgs__rosidl_generator_py.dir/rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c.o:
 
 libcustom_msgs__rosidl_typesupport_c.so:
 

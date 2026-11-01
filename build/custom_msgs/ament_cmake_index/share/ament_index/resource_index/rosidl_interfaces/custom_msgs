@@ -6,3 +6,5 @@ srv/Battery.idl
 srv/Battery.srv
 srv/Move.idl
 srv/Move.srv
+srv/SwitchMode.idl
+srv/SwitchMode.srv

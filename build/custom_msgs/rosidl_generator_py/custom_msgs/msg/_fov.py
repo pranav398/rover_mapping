@@ -88,22 +88,32 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
     __slots__ = [
         '_x',
         '_y',
+        '_battery',
         '_fov_size',
+        '_target_x',
+        '_target_y',
+        '_target_rad',
         '_height',
         '_roughness',
         '_muddiness',
         '_wetness',
+        '_goal_cells',
         '_check_fields',
     ]
 
     _fields_and_field_types: dict[str, str] = {
         'x': 'int32',
         'y': 'int32',
+        'battery': 'float',
         'fov_size': 'uint32',
+        'target_x': 'int32',
+        'target_y': 'int32',
+        'target_rad': 'int32',
         'height': 'sequence<float>',
         'roughness': 'sequence<float>',
         'muddiness': 'sequence<float>',
         'wetness': 'sequence<float>',
+        'goal_cells': 'sequence<boolean>',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -111,21 +121,31 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
     SLOT_TYPES: tuple[rosidl_parser.definition.AbstractType, ...] = (
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
         rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('float')),  # noqa: E501
+        rosidl_parser.definition.UnboundedSequence(rosidl_parser.definition.BasicType('boolean')),  # noqa: E501
     )
 
     def __init__(self, *,
                  x: typing.Optional[int] = None,  # noqa: E501
                  y: typing.Optional[int] = None,  # noqa: E501
+                 battery: typing.Optional[float] = None,  # noqa: E501
                  fov_size: typing.Optional[int] = None,  # noqa: E501
+                 target_x: typing.Optional[int] = None,  # noqa: E501
+                 target_y: typing.Optional[int] = None,  # noqa: E501
+                 target_rad: typing.Optional[int] = None,  # noqa: E501
                  height: typing.Optional[collections.abc.Sequence[float]] = None,  # noqa: E501
                  roughness: typing.Optional[collections.abc.Sequence[float]] = None,  # noqa: E501
                  muddiness: typing.Optional[collections.abc.Sequence[float]] = None,  # noqa: E501
                  wetness: typing.Optional[collections.abc.Sequence[float]] = None,  # noqa: E501
+                 goal_cells: typing.Optional[collections.abc.Sequence[bool]] = None,  # noqa: E501
                  check_fields: typing.Optional[bool] = None) -> None:
         if check_fields is not None:
             self._check_fields = check_fields
@@ -133,11 +153,16 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
             self._check_fields = ros_python_check_fields == '1'
         self.x = x if x is not None else int()
         self.y = y if y is not None else int()
+        self.battery = battery if battery is not None else float()
         self.fov_size = fov_size if fov_size is not None else int()
+        self.target_x = target_x if target_x is not None else int()
+        self.target_y = target_y if target_y is not None else int()
+        self.target_rad = target_rad if target_rad is not None else int()
         self.height = height if height is not None else array.array('f', [])
         self.roughness = roughness if roughness is not None else array.array('f', [])
         self.muddiness = muddiness if muddiness is not None else array.array('f', [])
         self.wetness = wetness if wetness is not None else array.array('f', [])
+        self.goal_cells = goal_cells if goal_cells is not None else []
 
     def __repr__(self) -> str:
         typename = self.__class__.__module__.split('.')
@@ -175,7 +200,15 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
             return False
         if self.y != other.y:
             return False
+        if self.battery != other.battery:
+            return False
         if self.fov_size != other.fov_size:
+            return False
+        if self.target_x != other.target_x:
+            return False
+        if self.target_y != other.target_y:
+            return False
+        if self.target_rad != other.target_rad:
             return False
         if self.height != other.height:
             return False
@@ -184,6 +217,8 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
         if self.muddiness != other.muddiness:
             return False
         if self.wetness != other.wetness:
+            return False
+        if self.goal_cells != other.goal_cells:
             return False
         return True
 
@@ -233,6 +268,26 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
         self._y = value
 
     @builtins.property
+    def battery(self) -> float:
+        """Message field 'battery'."""
+        return self._battery
+
+    @battery.setter
+    def battery(self, value: float) -> None:
+
+        if self._check_fields:
+            if False:  # Done for templating alignment
+                pass
+            else:
+                assert \
+                    isinstance(value, float), \
+                    "The 'battery' field must be of type 'float'"
+                assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                    "The 'battery' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+
+        self._battery = value
+
+    @builtins.property
     def fov_size(self) -> int:
         """Message field 'fov_size'."""
         return self._fov_size
@@ -251,6 +306,66 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
                     "The 'fov_size' field must be an unsigned integer in [0, 4294967295]"
 
         self._fov_size = value
+
+    @builtins.property
+    def target_x(self) -> int:
+        """Message field 'target_x'."""
+        return self._target_x
+
+    @target_x.setter
+    def target_x(self, value: int) -> None:
+
+        if self._check_fields:
+            if False:  # Done for templating alignment
+                pass
+            else:
+                assert \
+                    isinstance(value, int), \
+                    "The 'target_x' field must be of type 'int'"
+                assert value >= -2147483648 and value < 2147483648, \
+                    "The 'target_x' field must be an integer in [-2147483648, 2147483647]"
+
+        self._target_x = value
+
+    @builtins.property
+    def target_y(self) -> int:
+        """Message field 'target_y'."""
+        return self._target_y
+
+    @target_y.setter
+    def target_y(self, value: int) -> None:
+
+        if self._check_fields:
+            if False:  # Done for templating alignment
+                pass
+            else:
+                assert \
+                    isinstance(value, int), \
+                    "The 'target_y' field must be of type 'int'"
+                assert value >= -2147483648 and value < 2147483648, \
+                    "The 'target_y' field must be an integer in [-2147483648, 2147483647]"
+
+        self._target_y = value
+
+    @builtins.property
+    def target_rad(self) -> int:
+        """Message field 'target_rad'."""
+        return self._target_rad
+
+    @target_rad.setter
+    def target_rad(self, value: int) -> None:
+
+        if self._check_fields:
+            if False:  # Done for templating alignment
+                pass
+            else:
+                assert \
+                    isinstance(value, int), \
+                    "The 'target_rad' field must be of type 'int'"
+                assert value >= -2147483648 and value < 2147483648, \
+                    "The 'target_rad' field must be an integer in [-2147483648, 2147483647]"
+
+        self._target_rad = value
 
     @builtins.property
     def height(self) -> typing.Annotated[typing.Any, array.array[float]]:   # typing.Annotated can be remove after mypy 1.16+ see mypy#3004
@@ -387,3 +502,35 @@ class Fov(rosidl_pycommon.interface_base_classes.BaseMessage, metaclass=Metaclas
             return
         # type ignore below fixed in mypy 1.17+ see mypy#19421
         self._wetness = array.array('f', value)  # type: ignore[assignment]
+
+    @builtins.property
+    def goal_cells(self) -> typing.Annotated[typing.Any, list[bool]]:   # typing.Annotated can be remove after mypy 1.16+ see mypy#3004
+        """Message field 'goal_cells'."""
+        return self._goal_cells
+
+    @goal_cells.setter
+    def goal_cells(self, value: collections.abc.Sequence[bool]) -> None:
+        if isinstance(value, collections.abc.Set):
+            import warnings
+            warnings.warn(
+                'Using set or subclass of set is deprecated,'
+                ' please use a subclass of collections.abc.Sequence like list',
+                DeprecationWarning)
+
+        if self._check_fields:
+            if False:  # Done for templating alignment
+                pass
+            else:
+                assert \
+                    ((isinstance(value, collections.abc.Sequence) or
+                     isinstance(value, collections.abc.Set)) and
+                     not isinstance(value, str) and
+                     not isinstance(value, collections.UserString) and
+                     all(isinstance(v, bool) for v in value) and
+                     True), \
+                    "The 'goal_cells' field must be sequence and each value of type 'bool'"
+
+        if isinstance(value, list):
+            self._goal_cells = value
+            return
+        self._goal_cells = list(value)

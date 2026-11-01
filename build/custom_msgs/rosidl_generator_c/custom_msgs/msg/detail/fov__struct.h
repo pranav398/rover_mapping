@@ -24,6 +24,7 @@ extern "C"
 // Member 'roughness'
 // Member 'muddiness'
 // Member 'wetness'
+// Member 'goal_cells'
 #include "rosidl_runtime_c/primitives_sequence.h"
 
 /// Struct defined in msg/Fov in the package custom_msgs.
@@ -31,11 +32,16 @@ typedef struct custom_msgs__msg__Fov
 {
   int32_t x;
   int32_t y;
+  float battery;
   uint32_t fov_size;
+  int32_t target_x;
+  int32_t target_y;
+  int32_t target_rad;
   rosidl_runtime_c__float__Sequence height;
   rosidl_runtime_c__float__Sequence roughness;
   rosidl_runtime_c__float__Sequence muddiness;
   rosidl_runtime_c__float__Sequence wetness;
+  rosidl_runtime_c__boolean__Sequence goal_cells;
 } custom_msgs__msg__Fov;
 
 // Struct for a sequence of custom_msgs__msg__Fov.

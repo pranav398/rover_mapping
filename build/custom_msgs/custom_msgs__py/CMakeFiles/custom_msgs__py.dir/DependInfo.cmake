@@ -24,6 +24,8 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_battery_s.c" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_move.py" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_move_s.c" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_switch_mode.py" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/srv/_switch_mode_s.c" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_py/custom_msgs/_custom_msgs_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

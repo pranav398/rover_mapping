@@ -5,6 +5,7 @@ libcustom_msgs__rosidl_typesupport_c.so: \
   CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/info__type_support.cpp.o \
   CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/battery__type_support.cpp.o \
   CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/move__type_support.cpp.o \
+  CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/switch_mode__type_support.cpp.o \
   libcustom_msgs__rosidl_generator_c.so \
   /opt/ros/lyrical/lib/libservice_msgs__rosidl_typesupport_c.so \
   /opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_c.so \
@@ -52,6 +53,8 @@ CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msg
 CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/battery__type_support.cpp.o:
 
 CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/move__type_support.cpp.o:
+
+CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/srv/switch_mode__type_support.cpp.o:
 
 libcustom_msgs__rosidl_generator_c.so:
 

@@ -23,7 +23,7 @@ extern "C"
 /// Struct defined in srv/Battery in the package custom_msgs.
 typedef struct custom_msgs__srv__Battery_Request
 {
-  int32_t deduction;
+  float deduction;
 } custom_msgs__srv__Battery_Request;
 
 // Struct for a sequence of custom_msgs__srv__Battery_Request.

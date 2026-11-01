@@ -48,10 +48,38 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
+  // member: battery
+  {
+    out << "battery: ";
+    rosidl_generator_traits::value_to_yaml(msg.battery, out);
+    out << ", ";
+  }
+
   // member: fov_size
   {
     out << "fov_size: ";
     rosidl_generator_traits::value_to_yaml(msg.fov_size, out);
+    out << ", ";
+  }
+
+  // member: target_x
+  {
+    out << "target_x: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_x, out);
+    out << ", ";
+  }
+
+  // member: target_y
+  {
+    out << "target_y: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_y, out);
+    out << ", ";
+  }
+
+  // member: target_rad
+  {
+    out << "target_rad: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_rad, out);
     out << ", ";
   }
 
@@ -124,6 +152,24 @@ inline void to_flow_style_yaml(
       }
       out << "]";
     }
+    out << ", ";
+  }
+
+  // member: goal_cells
+  {
+    if (msg.goal_cells.size() == 0) {
+      out << "goal_cells: []";
+    } else {
+      out << "goal_cells: [";
+      size_t pending_items = msg.goal_cells.size();
+      for (auto item : msg.goal_cells) {
+        rosidl_generator_traits::value_to_yaml(item, out);
+        if (--pending_items > 0) {
+          out << ", ";
+        }
+      }
+      out << "]";
+    }
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -152,6 +198,16 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
+  // member: battery
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "battery: ";
+    rosidl_generator_traits::value_to_yaml(msg.battery, out);
+    out << "\n";
+  }
+
   // member: fov_size
   {
     if (indentation > 0) {
@@ -159,6 +215,36 @@ inline void to_block_style_yaml(
     }
     out << "fov_size: ";
     rosidl_generator_traits::value_to_yaml(msg.fov_size, out);
+    out << "\n";
+  }
+
+  // member: target_x
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "target_x: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_x, out);
+    out << "\n";
+  }
+
+  // member: target_y
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "target_y: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_y, out);
+    out << "\n";
+  }
+
+  // member: target_rad
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "target_rad: ";
+    rosidl_generator_traits::value_to_yaml(msg.target_rad, out);
     out << "\n";
   }
 
@@ -241,6 +327,26 @@ inline void to_block_style_yaml(
       }
     }
   }
+
+  // member: goal_cells
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    if (msg.goal_cells.size() == 0) {
+      out << "goal_cells: []\n";
+    } else {
+      out << "goal_cells:\n";
+      for (auto item : msg.goal_cells) {
+        if (indentation > 0) {
+          out << std::string(indentation, ' ');
+        }
+        out << "- ";
+        rosidl_generator_traits::value_to_yaml(item, out);
+        out << "\n";
+      }
+    }
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const Fov & msg, bool use_flow_style = false)
@@ -260,11 +366,16 @@ constexpr auto as_tuple_ref(T && msg)
   return std::forward_as_tuple(
     std::forward<T>(msg).x,
     std::forward<T>(msg).y,
+    std::forward<T>(msg).battery,
     std::forward<T>(msg).fov_size,
+    std::forward<T>(msg).target_x,
+    std::forward<T>(msg).target_y,
+    std::forward<T>(msg).target_rad,
     std::forward<T>(msg).height,
     std::forward<T>(msg).roughness,
     std::forward<T>(msg).muddiness,
-    std::forward<T>(msg).wetness);
+    std::forward<T>(msg).wetness,
+    std::forward<T>(msg).goal_cells);
 }
 
 }  // namespace msg
@@ -301,15 +412,20 @@ struct is_message<custom_msgs::msg::Fov>
 template<>
 struct MessageTraits<custom_msgs::msg::Fov>
 {
-  static constexpr std::size_t member_count = 7;
+  static constexpr std::size_t member_count = 12;
   static constexpr std::array<std::string_view, member_count> member_names = {
     "x",
     "y",
+    "battery",
     "fov_size",
+    "target_x",
+    "target_y",
+    "target_rad",
     "height",
     "roughness",
     "muddiness",
     "wetness",
+    "goal_cells",
   };
 };
 

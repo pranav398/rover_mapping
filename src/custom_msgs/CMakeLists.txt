@@ -18,6 +18,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Info.msg"
   "srv/Battery.srv"
   "srv/Move.srv"
+  "srv/SwitchMode.srv"
 )
 
 if(BUILD_TESTING)

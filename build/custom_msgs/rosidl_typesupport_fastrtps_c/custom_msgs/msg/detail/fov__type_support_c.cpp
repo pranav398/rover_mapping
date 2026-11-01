@@ -35,8 +35,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/primitives_sequence.h"  // height, muddiness, roughness, wetness
-#include "rosidl_runtime_c/primitives_sequence_functions.h"  // height, muddiness, roughness, wetness
+#include "rosidl_runtime_c/primitives_sequence.h"  // goal_cells, height, muddiness, roughness, wetness
+#include "rosidl_runtime_c/primitives_sequence_functions.h"  // goal_cells, height, muddiness, roughness, wetness
 
 // forward declare type support functions
 
@@ -59,9 +59,29 @@ bool cdr_serialize_custom_msgs__msg__Fov(
     cdr << ros_message->y;
   }
 
+  // Field name: battery
+  {
+    cdr << ros_message->battery;
+  }
+
   // Field name: fov_size
   {
     cdr << ros_message->fov_size;
+  }
+
+  // Field name: target_x
+  {
+    cdr << ros_message->target_x;
+  }
+
+  // Field name: target_y
+  {
+    cdr << ros_message->target_y;
+  }
+
+  // Field name: target_rad
+  {
+    cdr << ros_message->target_rad;
   }
 
   // Field name: height
@@ -96,6 +116,14 @@ bool cdr_serialize_custom_msgs__msg__Fov(
     cdr.serialize_array(array_ptr, size);
   }
 
+  // Field name: goal_cells
+  {
+    size_t size = ros_message->goal_cells.size;
+    auto array_ptr = ros_message->goal_cells.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serialize_array(array_ptr, size);
+  }
+
   return true;
 }
 
@@ -114,9 +142,29 @@ bool cdr_deserialize_custom_msgs__msg__Fov(
     cdr >> ros_message->y;
   }
 
+  // Field name: battery
+  {
+    cdr >> ros_message->battery;
+  }
+
   // Field name: fov_size
   {
     cdr >> ros_message->fov_size;
+  }
+
+  // Field name: target_x
+  {
+    cdr >> ros_message->target_x;
+  }
+
+  // Field name: target_y
+  {
+    cdr >> ros_message->target_y;
+  }
+
+  // Field name: target_rad
+  {
+    cdr >> ros_message->target_rad;
   }
 
   // Field name: height
@@ -223,6 +271,36 @@ bool cdr_deserialize_custom_msgs__msg__Fov(
     cdr.deserialize_array(array_ptr, size);
   }
 
+  // Field name: goal_cells
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+
+    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
+    auto old_state = cdr.get_state();
+    bool correct_size = cdr.jump(size);
+    cdr.set_state(old_state);
+    if (!correct_size) {
+      fprintf(stderr, "sequence size exceeds remaining buffer\n");
+      return false;
+    }
+
+    if (ros_message->goal_cells.data) {
+      rosidl_runtime_c__boolean__Sequence__fini(&ros_message->goal_cells);
+    }
+    if (!rosidl_runtime_c__boolean__Sequence__init(&ros_message->goal_cells, size)) {
+      fprintf(stderr, "failed to create array for field 'goal_cells'");
+      return false;
+    }
+    auto array_ptr = ros_message->goal_cells.data;
+    for (size_t i = 0; i < size; ++i) {
+      uint8_t tmp;
+      cdr >> tmp;
+      array_ptr[i] = tmp ? true : false;
+    }
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -255,9 +333,37 @@ size_t get_serialized_size_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
+  // Field name: battery
+  {
+    size_t item_size = sizeof(ros_message->battery);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Field name: fov_size
   {
     size_t item_size = sizeof(ros_message->fov_size);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_x
+  {
+    size_t item_size = sizeof(ros_message->target_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_y
+  {
+    size_t item_size = sizeof(ros_message->target_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_rad
+  {
+    size_t item_size = sizeof(ros_message->target_rad);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -302,6 +408,18 @@ size_t get_serialized_size_custom_msgs__msg__Fov(
   {
     size_t array_size = ros_message->wetness.size;
     auto array_ptr = ros_message->wetness.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: goal_cells
+  {
+    size_t array_size = ros_message->goal_cells.size;
+    auto array_ptr = ros_message->goal_cells.data;
     current_alignment += padding +
       eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
     (void)array_ptr;
@@ -348,7 +466,39 @@ size_t max_serialized_size_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: battery
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Field name: fov_size
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_rad
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -404,6 +554,17 @@ size_t max_serialized_size_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: goal_cells
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -413,7 +574,7 @@ size_t max_serialized_size_custom_msgs__msg__Fov(
     using DataType = custom_msgs__msg__Fov;
     is_plain =
       (
-      offsetof(DataType, wetness) +
+      offsetof(DataType, goal_cells) +
       last_member_size
       ) == ret_val;
   }
@@ -435,9 +596,29 @@ bool cdr_serialize_key_custom_msgs__msg__Fov(
     cdr << ros_message->y;
   }
 
+  // Field name: battery
+  {
+    cdr << ros_message->battery;
+  }
+
   // Field name: fov_size
   {
     cdr << ros_message->fov_size;
+  }
+
+  // Field name: target_x
+  {
+    cdr << ros_message->target_x;
+  }
+
+  // Field name: target_y
+  {
+    cdr << ros_message->target_y;
+  }
+
+  // Field name: target_rad
+  {
+    cdr << ros_message->target_rad;
   }
 
   // Field name: height
@@ -468,6 +649,14 @@ bool cdr_serialize_key_custom_msgs__msg__Fov(
   {
     size_t size = ros_message->wetness.size;
     auto array_ptr = ros_message->wetness.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serialize_array(array_ptr, size);
+  }
+
+  // Field name: goal_cells
+  {
+    size_t size = ros_message->goal_cells.size;
+    auto array_ptr = ros_message->goal_cells.data;
     cdr << static_cast<uint32_t>(size);
     cdr.serialize_array(array_ptr, size);
   }
@@ -504,9 +693,37 @@ size_t get_serialized_size_key_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
+  // Field name: battery
+  {
+    size_t item_size = sizeof(ros_message->battery);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   // Field name: fov_size
   {
     size_t item_size = sizeof(ros_message->fov_size);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_x
+  {
+    size_t item_size = sizeof(ros_message->target_x);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_y
+  {
+    size_t item_size = sizeof(ros_message->target_y);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
+  // Field name: target_rad
+  {
+    size_t item_size = sizeof(ros_message->target_rad);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -559,6 +776,18 @@ size_t get_serialized_size_key_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
 
+  // Field name: goal_cells
+  {
+    size_t array_size = ros_message->goal_cells.size;
+    auto array_ptr = ros_message->goal_cells.data;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    (void)array_ptr;
+    size_t item_size = sizeof(array_ptr[0]);
+    current_alignment += array_size * item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+
   return current_alignment - initial_alignment;
 }
 
@@ -595,7 +824,39 @@ size_t max_serialized_size_key_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: battery
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   // Field name: fov_size
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_x
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_y
+  {
+    size_t array_size = 1;
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Field name: target_rad
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -651,6 +912,17 @@ size_t max_serialized_size_key_custom_msgs__msg__Fov(
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
   }
 
+  // Field name: goal_cells
+  {
+    size_t array_size = 0;
+    full_bounded = false;
+    is_plain = false;
+    current_alignment += padding +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, padding);
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -659,7 +931,7 @@ size_t max_serialized_size_key_custom_msgs__msg__Fov(
     using DataType = custom_msgs__msg__Fov;
     is_plain =
       (
-      offsetof(DataType, wetness) +
+      offsetof(DataType, goal_cells) +
       last_member_size
       ) == ret_val;
   }
@@ -735,9 +1007,29 @@ bool cdr_serialize_with_endpoint_custom_msgs__msg__Fov(
     cdr << ros_message->y;
   }
 
+  // Field name: battery
+  {
+    cdr << ros_message->battery;
+  }
+
   // Field name: fov_size
   {
     cdr << ros_message->fov_size;
+  }
+
+  // Field name: target_x
+  {
+    cdr << ros_message->target_x;
+  }
+
+  // Field name: target_y
+  {
+    cdr << ros_message->target_y;
+  }
+
+  // Field name: target_rad
+  {
+    cdr << ros_message->target_rad;
   }
 
   // Field name: height
@@ -772,6 +1064,14 @@ bool cdr_serialize_with_endpoint_custom_msgs__msg__Fov(
     cdr.serialize_array(array_ptr, size);
   }
 
+  // Field name: goal_cells
+  {
+    size_t size = ros_message->goal_cells.size;
+    auto array_ptr = ros_message->goal_cells.data;
+    cdr << static_cast<uint32_t>(size);
+    cdr.serialize_array(array_ptr, size);
+  }
+
   return true;
 }
 
@@ -795,9 +1095,29 @@ bool cdr_deserialize_with_endpoint_custom_msgs__msg__Fov(
     cdr >> ros_message->y;
   }
 
+  // Field name: battery
+  {
+    cdr >> ros_message->battery;
+  }
+
   // Field name: fov_size
   {
     cdr >> ros_message->fov_size;
+  }
+
+  // Field name: target_x
+  {
+    cdr >> ros_message->target_x;
+  }
+
+  // Field name: target_y
+  {
+    cdr >> ros_message->target_y;
+  }
+
+  // Field name: target_rad
+  {
+    cdr >> ros_message->target_rad;
   }
 
   // Field name: height
@@ -902,6 +1222,36 @@ bool cdr_deserialize_with_endpoint_custom_msgs__msg__Fov(
     }
     auto array_ptr = ros_message->wetness.data;
     cdr.deserialize_array(array_ptr, size);
+  }
+
+  // Field name: goal_cells
+  {
+    uint32_t cdrSize;
+    cdr >> cdrSize;
+    size_t size = static_cast<size_t>(cdrSize);
+
+    // Check there are at least 'size' remaining bytes in the CDR stream before resizing
+    auto old_state = cdr.get_state();
+    bool correct_size = cdr.jump(size);
+    cdr.set_state(old_state);
+    if (!correct_size) {
+      fprintf(stderr, "sequence size exceeds remaining buffer\n");
+      return false;
+    }
+
+    if (ros_message->goal_cells.data) {
+      rosidl_runtime_c__boolean__Sequence__fini(&ros_message->goal_cells);
+    }
+    if (!rosidl_runtime_c__boolean__Sequence__init(&ros_message->goal_cells, size)) {
+      fprintf(stderr, "failed to create array for field 'goal_cells'");
+      return false;
+    }
+    auto array_ptr = ros_message->goal_cells.data;
+    for (size_t i = 0; i < size; ++i) {
+      uint8_t tmp;
+      cdr >> tmp;
+      array_ptr[i] = tmp ? true : false;
+    }
   }
 
   return true;

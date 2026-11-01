@@ -31,6 +31,8 @@ setup(
         'console_scripts': [
             'map_node=world_map.map_node:main',
             'battery_node=world_map.battery_node:main',
+            'explore_node=world_map.explore_node:main',
+            'switch_mode_client=world_map.switch_mode_client:main',
         ],
     },
 )

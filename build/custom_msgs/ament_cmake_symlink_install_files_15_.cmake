@@ -1,1 +1,1 @@
-ament_cmake_symlink_install_files("/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" FILES "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs/srv/Battery.srv" "DESTINATION" "share/custom_msgs/srv")
+ament_cmake_symlink_install_files("/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs" FILES "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs/msg/Fov.msg" "DESTINATION" "share/custom_msgs/msg")

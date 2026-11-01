@@ -20,7 +20,12 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp"
   "rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp"
   "rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp"
+  "rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp"
+  "rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp"
+  "rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp"
+  "rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp"
   "rosidl_generator_cpp/custom_msgs/srv/move.hpp"
+  "rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

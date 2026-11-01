@@ -253,4 +253,7 @@ CMakeFiles/custom_msgs_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/
  /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/battery__functions.h \
  /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h \
  /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/move__struct.h \
- /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/move__functions.h
+ /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/move__functions.h \
+ /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.h \
+ /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__struct.h \
+ /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.h

@@ -70,6 +70,7 @@ CMakeFiles/custom_msgs: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_
 CMakeFiles/custom_msgs: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/src/custom_msgs/msg/Info.msg
 CMakeFiles/custom_msgs: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/src/custom_msgs/srv/Battery.srv
 CMakeFiles/custom_msgs: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/src/custom_msgs/srv/Move.srv
+CMakeFiles/custom_msgs: /run/media/pranav/Files/Education/IIT\ Bombay/MRT/rover_mapping/src/custom_msgs/srv/SwitchMode.srv
 CMakeFiles/custom_msgs: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
 
 CMakeFiles/custom_msgs.dir/codegen:

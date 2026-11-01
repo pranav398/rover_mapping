@@ -43,7 +43,7 @@ struct Battery_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->deduction = 0l;
+      this->deduction = 0.0f;
     }
   }
 
@@ -53,18 +53,18 @@ struct Battery_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->deduction = 0l;
+      this->deduction = 0.0f;
     }
   }
 
   // field types and members
   using _deduction_type =
-    int32_t;
+    float;
   _deduction_type deduction;
 
   // setters for named parameter idiom
   Type & set__deduction(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->deduction = _arg;
     return *this;

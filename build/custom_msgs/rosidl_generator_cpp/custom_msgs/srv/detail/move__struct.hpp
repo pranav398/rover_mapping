@@ -45,7 +45,7 @@ struct Move_Request_
     {
       this->delta_x = 0l;
       this->delta_y = 0l;
-      this->deduction = 0l;
+      this->deduction = 0.0f;
     }
   }
 
@@ -57,7 +57,7 @@ struct Move_Request_
     {
       this->delta_x = 0l;
       this->delta_y = 0l;
-      this->deduction = 0l;
+      this->deduction = 0.0f;
     }
   }
 
@@ -69,7 +69,7 @@ struct Move_Request_
     int32_t;
   _delta_y_type delta_y;
   using _deduction_type =
-    int32_t;
+    float;
   _deduction_type deduction;
 
   // setters for named parameter idiom
@@ -86,7 +86,7 @@ struct Move_Request_
     return *this;
   }
   Type & set__deduction(
-    const int32_t & _arg)
+    const float & _arg)
   {
     this->deduction = _arg;
     return *this;

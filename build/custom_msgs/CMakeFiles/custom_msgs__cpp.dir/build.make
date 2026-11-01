@@ -86,6 +86,11 @@ CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__b
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp
+CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp
 CMakeFiles/custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -111,6 +116,7 @@ rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/msg/Fov
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/msg/Info.idl
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/srv/Battery.idl
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_cpp/custom_msgs/msg/fov.hpp: rosidl_adapter/custom_msgs/srv/SwitchMode.idl
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/service_msgs/msg/ServiceEventInfo.idl
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/custom_msgs/msg/fov.hpp: /opt/ros/lyrical/share/builtin_interfaces/msg/Time.idl
@@ -174,6 +180,21 @@ rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp: rosidl_generator_c
 rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
 
+rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp
+
+rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp
+
 rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/custom_msgs/msg/fov.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -201,7 +222,12 @@ custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__builder.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp
 custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/move.hpp
+custom_msgs__cpp: rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp
 custom_msgs__cpp: CMakeFiles/custom_msgs__cpp.dir/build.make
 .PHONY : custom_msgs__cpp
 

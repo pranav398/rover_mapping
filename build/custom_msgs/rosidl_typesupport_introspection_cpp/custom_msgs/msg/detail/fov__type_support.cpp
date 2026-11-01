@@ -218,7 +218,36 @@ void resize_function__Fov__wetness(void * untyped_member, size_t size)
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Fov_message_member_array[7] = {
+size_t size_function__Fov__goal_cells(const void * untyped_member)
+{
+  const auto * member = reinterpret_cast<const std::vector<bool> *>(untyped_member);
+  return member->size();
+}
+
+void fetch_function__Fov__goal_cells(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const auto & member = *reinterpret_cast<const std::vector<bool> *>(untyped_member);
+  auto & value = *reinterpret_cast<bool *>(untyped_value);
+  value = member[index];
+}
+
+void assign_function__Fov__goal_cells(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  auto & member = *reinterpret_cast<std::vector<bool> *>(untyped_member);
+  const auto & value = *reinterpret_cast<const bool *>(untyped_value);
+  member[index] = value;
+}
+
+void resize_function__Fov__goal_cells(void * untyped_member, size_t size)
+{
+  auto * member =
+    reinterpret_cast<std::vector<bool> *>(untyped_member);
+  member->resize(size);
+}
+
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Fov_message_member_array[12] = {
   {
     "x",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -258,6 +287,25 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Fov_message_m
     false  // is_rosidl_buffer
   },
   {
+    "battery",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Fov, battery),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
     "fov_size",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
@@ -267,6 +315,63 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Fov_message_m
     0,  // array size
     false,  // is upper bound
     offsetof(custom_msgs::msg::Fov, fov_size),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_x",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Fov, target_x),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_y",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Fov, target_y),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_rad",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Fov, target_rad),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -351,13 +456,32 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Fov_message_m
     assign_function__Fov__wetness,  // assign(index, value) function pointer
     resize_function__Fov__wetness,  // resize(index) function pointer
     false  // is_rosidl_buffer
+  },
+  {
+    "goal_cells",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is key
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs::msg::Fov, goal_cells),  // bytes offset in struct
+    nullptr,  // default value
+    size_function__Fov__goal_cells,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    fetch_function__Fov__goal_cells,  // fetch(index, &value) function pointer
+    assign_function__Fov__goal_cells,  // assign(index, value) function pointer
+    resize_function__Fov__goal_cells,  // resize(index) function pointer
+    false  // is_rosidl_buffer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Fov_message_members = {
   "custom_msgs::msg",  // message namespace
   "Fov",  // message name
-  7,  // number of fields
+  12,  // number of fields
   sizeof(custom_msgs::msg::Fov),
   false,  // has_any_key_member_
   Fov_message_member_array,  // message members

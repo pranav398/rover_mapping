@@ -15,6 +15,7 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Info.json" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Fov.json"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/Battery.json" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Fov.json"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/Move.json" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Fov.json"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/Fov.json"
   )
 
 

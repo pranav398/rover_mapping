@@ -1,0 +1,207 @@
+[-1793533965428035840.000s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-up-to', 'world_map']
+[-1793533965428035840.000s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=['world_map'], packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7af2eefbbc50>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7af2eeffe660>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7af2eeffe660>>, mixin_verb=('build',))
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[-1793533965428035840.000s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ignore_ament_install'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_pkg']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_pkg'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['colcon_meta']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'colcon_meta'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extensions ['ros']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/custom_msgs) by extension 'ros'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/custom_msgs' with type 'ros.ament_cmake' and name 'custom_msgs'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extensions ['ignore', 'ignore_ament_install']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extension 'ignore'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extension 'ignore_ament_install'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extensions ['colcon_pkg']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extension 'colcon_pkg'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extensions ['colcon_meta']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extension 'colcon_meta'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extensions ['ros']
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_identification:_identify(src/world_map) by extension 'ros'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.package_identification:Package 'src/world_map' with type 'ros.ament_python' and name 'world_map'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[-1793533965428035840.000s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 288 installed packages in /opt/ros/lyrical
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'custom_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.verb:Building package 'custom_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs', 'merge_install': False, 'path': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs', 'symlink_install': False, 'test_result_base': None}
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_target' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_clean_cache' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_clean_first' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'cmake_force_configure' from command line to 'False'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'ament_cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'catkin_cmake_args' from command line to 'None'
+[-1793533965428035840.000s] Level 5:colcon.colcon_core.verb:set package 'world_map' build argument 'catkin_skip_building_tests' from command line to 'False'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.verb:Building package 'world_map' with the following arguments: {'ament_cmake_args': None, 'build_base': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map', 'merge_install': False, 'path': '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map', 'symlink_install': False, 'test_result_base': None}
+[-1793533965428035840.000s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[-1793533965428035840.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[-1793533965428035840.000s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs' with build type 'ament_cmake'
+[-1793533965428035840.000s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/custom_msgs'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs -- -j12 -l12
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs -- -j12 -l12
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/lyrical DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs' for CMake module files
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs' for CMake config files
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/bin'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/bin'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.bash'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.zsh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(custom_msgs)
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs' for CMake module files
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs' for CMake config files
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'cmake_prefix_path')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/cmake_prefix_path.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'ld_library_path_lib')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/ld_library_path_lib.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/bin'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/pkgconfig/custom_msgs.pc'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('custom_msgs', 'pythonpath')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/hook/pythonpath.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/bin'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.bash'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/custom_msgs/package.zsh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/share/colcon-core/packages/custom_msgs)
+[-1793533965428035840.000s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map' with build type 'ament_python'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('world_map', 'ament_prefix_path')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/ament_prefix_path.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/ament_prefix_path.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/ament_prefix_path.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1793533965428035840.000s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: editable_wheel, egg_info, bdist_wheel, setopt, compile_catalog, build_scripts, bdist_dumb, sdist, bdist_rpm, bdist, build, build_clib, install_egg_info, rotate, install_data, easy_install, install, dist_info, saveopts, init_catalog, bdist_egg, check, extract_messages, symlink_data, install_headers, install_scripts, build_py, build_ext, alias, clean, install_lib, update_catalog, develop
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map': AMENT_PREFIX_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/world_map build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log --install-scripts $base/lib/world_map --single-version-externally-managed install_data
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map' for CMake module files
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/src/world_map' returned '0': AMENT_PREFIX_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs:${CMAKE_PREFIX_PATH} DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages:/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/custom_msgs/lib/python3.14/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/world_map build --build-base /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/build install --record /run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/world_map/install.log --install-scripts $base/lib/world_map --single-version-externally-managed install_data
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map' for CMake config files
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/bin'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/pkgconfig/world_map.pc'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/lib/python3.14/site-packages'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('world_map', 'pythonpath')
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/pythonpath.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/pythonpath.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating environment hook '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/hook/pythonpath.sh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:checking '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/bin'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(world_map)
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/package.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package descriptor '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/package.dsv'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/package.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/package.bash'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating package script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/world_map/package.zsh'
+[-1793533965428035840.000s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/world_map/share/colcon-core/packages/world_map)
+[-1793533965428035840.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[-1793533965428035840.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[-1793533965428035840.000s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[-1793533965428035840.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[-1793533965428035840.000s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[-1793533965428035840.000s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[-1793533965428035840.000s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/local_setup.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/_local_setup_util_ps1.py'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/setup.ps1'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/local_setup.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix util module '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/_local_setup_util_sh.py'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/setup.sh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/local_setup.bash'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/setup.bash'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/local_setup.zsh'
+[-1793533965428035840.000s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/install/setup.zsh'

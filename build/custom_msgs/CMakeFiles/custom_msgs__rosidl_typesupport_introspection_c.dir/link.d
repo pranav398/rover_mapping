@@ -5,6 +5,7 @@ libcustom_msgs__rosidl_typesupport_introspection_c.so: \
   CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/info__type_support.c.o \
   CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/battery__type_support.c.o \
   CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/move__type_support.c.o \
+  CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/switch_mode__type_support.c.o \
   libcustom_msgs__rosidl_generator_c.so \
   /opt/ros/lyrical/lib/libservice_msgs__rosidl_typesupport_introspection_c.so \
   /opt/ros/lyrical/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so \
@@ -48,6 +49,8 @@ CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesuppor
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/battery__type_support.c.o:
 
 CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/move__type_support.c.o:
+
+CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/srv/detail/switch_mode__type_support.c.o:
 
 libcustom_msgs__rosidl_generator_c.so:
 

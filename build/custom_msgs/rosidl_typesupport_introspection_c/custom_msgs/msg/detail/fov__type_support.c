@@ -17,6 +17,7 @@
 // Member `roughness`
 // Member `muddiness`
 // Member `wetness`
+// Member `goal_cells`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 #ifdef __cplusplus
@@ -258,7 +259,62 @@ bool custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__resize_function_
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__Fov_message_member_array[7] = {
+size_t custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__size_function__Fov__goal_cells(
+  const void * untyped_member)
+{
+  const rosidl_runtime_c__boolean__Sequence * member =
+    (const rosidl_runtime_c__boolean__Sequence *)(untyped_member);
+  return member->size;
+}
+
+const void * custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_const_function__Fov__goal_cells(
+  const void * untyped_member, size_t index)
+{
+  const rosidl_runtime_c__boolean__Sequence * member =
+    (const rosidl_runtime_c__boolean__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void * custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_function__Fov__goal_cells(
+  void * untyped_member, size_t index)
+{
+  rosidl_runtime_c__boolean__Sequence * member =
+    (rosidl_runtime_c__boolean__Sequence *)(untyped_member);
+  return &member->data[index];
+}
+
+void custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__fetch_function__Fov__goal_cells(
+  const void * untyped_member, size_t index, void * untyped_value)
+{
+  const bool * item =
+    ((const bool *)
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_const_function__Fov__goal_cells(untyped_member, index));
+  bool * value =
+    (bool *)(untyped_value);
+  *value = *item;
+}
+
+void custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__assign_function__Fov__goal_cells(
+  void * untyped_member, size_t index, const void * untyped_value)
+{
+  bool * item =
+    ((bool *)
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_function__Fov__goal_cells(untyped_member, index));
+  const bool * value =
+    (const bool *)(untyped_value);
+  *item = *value;
+}
+
+bool custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__resize_function__Fov__goal_cells(
+  void * untyped_member, size_t size)
+{
+  rosidl_runtime_c__boolean__Sequence * member =
+    (rosidl_runtime_c__boolean__Sequence *)(untyped_member);
+  rosidl_runtime_c__boolean__Sequence__fini(member);
+  return rosidl_runtime_c__boolean__Sequence__init(member, size);
+}
+
+static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__Fov_message_member_array[12] = {
   {
     "x",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -298,6 +354,25 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fov__
     false  // is_rosidl_buffer
   },
   {
+    "battery",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Fov, battery),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
     "fov_size",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
@@ -307,6 +382,63 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fov__
     0,  // array size
     false,  // is upper bound
     offsetof(custom_msgs__msg__Fov, fov_size),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_x",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Fov, target_x),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_y",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Fov, target_y),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL,  // resize(index) function pointer
+    false  // is_rosidl_buffer
+  },
+  {
+    "target_rad",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Fov, target_rad),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -391,13 +523,32 @@ static rosidl_typesupport_introspection_c__MessageMember custom_msgs__msg__Fov__
     custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__assign_function__Fov__wetness,  // assign(index, value) function pointer
     custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__resize_function__Fov__wetness,  // resize(index) function pointer
     false  // is_rosidl_buffer
+  },
+  {
+    "goal_cells",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is key
+    true,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(custom_msgs__msg__Fov, goal_cells),  // bytes offset in struct
+    NULL,  // default value
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__size_function__Fov__goal_cells,  // size() function pointer
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_const_function__Fov__goal_cells,  // get_const(index) function pointer
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__get_function__Fov__goal_cells,  // get(index) function pointer
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__fetch_function__Fov__goal_cells,  // fetch(index, &value) function pointer
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__assign_function__Fov__goal_cells,  // assign(index, value) function pointer
+    custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__resize_function__Fov__goal_cells,  // resize(index) function pointer
+    false  // is_rosidl_buffer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__Fov_message_members = {
   "custom_msgs__msg",  // message namespace
   "Fov",  // message name
-  7,  // number of fields
+  12,  // number of fields
   sizeof(custom_msgs__msg__Fov),
   false,  // has_any_key_member_
   custom_msgs__msg__Fov__rosidl_typesupport_introspection_c__Fov_message_member_array,  // message members

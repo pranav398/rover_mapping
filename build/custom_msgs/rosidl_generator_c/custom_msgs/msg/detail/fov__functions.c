@@ -16,6 +16,7 @@
 // Member `roughness`
 // Member `muddiness`
 // Member `wetness`
+// Member `goal_cells`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
@@ -26,7 +27,11 @@ custom_msgs__msg__Fov__init(custom_msgs__msg__Fov * msg)
   }
   // x
   // y
+  // battery
   // fov_size
+  // target_x
+  // target_y
+  // target_rad
   // height
   if (!rosidl_runtime_c__float__Sequence__init(&msg->height, 0)) {
     custom_msgs__msg__Fov__fini(msg);
@@ -47,6 +52,11 @@ custom_msgs__msg__Fov__init(custom_msgs__msg__Fov * msg)
     custom_msgs__msg__Fov__fini(msg);
     return false;
   }
+  // goal_cells
+  if (!rosidl_runtime_c__boolean__Sequence__init(&msg->goal_cells, 0)) {
+    custom_msgs__msg__Fov__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -58,7 +68,11 @@ custom_msgs__msg__Fov__fini(custom_msgs__msg__Fov * msg)
   }
   // x
   // y
+  // battery
   // fov_size
+  // target_x
+  // target_y
+  // target_rad
   // height
   rosidl_runtime_c__float__Sequence__fini(&msg->height);
   // roughness
@@ -67,6 +81,8 @@ custom_msgs__msg__Fov__fini(custom_msgs__msg__Fov * msg)
   rosidl_runtime_c__float__Sequence__fini(&msg->muddiness);
   // wetness
   rosidl_runtime_c__float__Sequence__fini(&msg->wetness);
+  // goal_cells
+  rosidl_runtime_c__boolean__Sequence__fini(&msg->goal_cells);
 }
 
 bool
@@ -83,8 +99,24 @@ custom_msgs__msg__Fov__are_equal(const custom_msgs__msg__Fov * lhs, const custom
   if (lhs->y != rhs->y) {
     return false;
   }
+  // battery
+  if (lhs->battery != rhs->battery) {
+    return false;
+  }
   // fov_size
   if (lhs->fov_size != rhs->fov_size) {
+    return false;
+  }
+  // target_x
+  if (lhs->target_x != rhs->target_x) {
+    return false;
+  }
+  // target_y
+  if (lhs->target_y != rhs->target_y) {
+    return false;
+  }
+  // target_rad
+  if (lhs->target_rad != rhs->target_rad) {
     return false;
   }
   // height
@@ -111,6 +143,12 @@ custom_msgs__msg__Fov__are_equal(const custom_msgs__msg__Fov * lhs, const custom
   {
     return false;
   }
+  // goal_cells
+  if (!rosidl_runtime_c__boolean__Sequence__are_equal(
+      &(lhs->goal_cells), &(rhs->goal_cells)))
+  {
+    return false;
+  }
   return true;
 }
 
@@ -126,8 +164,16 @@ custom_msgs__msg__Fov__copy(
   output->x = input->x;
   // y
   output->y = input->y;
+  // battery
+  output->battery = input->battery;
   // fov_size
   output->fov_size = input->fov_size;
+  // target_x
+  output->target_x = input->target_x;
+  // target_y
+  output->target_y = input->target_y;
+  // target_rad
+  output->target_rad = input->target_rad;
   // height
   if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->height), &(output->height)))
@@ -149,6 +195,12 @@ custom_msgs__msg__Fov__copy(
   // wetness
   if (!rosidl_runtime_c__float__Sequence__copy(
       &(input->wetness), &(output->wetness)))
+  {
+    return false;
+  }
+  // goal_cells
+  if (!rosidl_runtime_c__boolean__Sequence__copy(
+      &(input->goal_cells), &(output->goal_cells)))
   {
     return false;
   }

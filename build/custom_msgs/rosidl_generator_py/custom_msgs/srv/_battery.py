@@ -27,6 +27,8 @@ ros_python_check_fields = os.getenv('ROS_PYTHON_CHECK_FIELDS', default='')
 
 import builtins  # noqa: E402, I100
 
+import math  # noqa: E402, I100
+
 import rosidl_parser.definition  # noqa: E402, I100
 
 
@@ -83,23 +85,23 @@ class Battery_Request(rosidl_pycommon.interface_base_classes.BaseMessage, metacl
     ]
 
     _fields_and_field_types: dict[str, str] = {
-        'deduction': 'int32',
+        'deduction': 'float',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
     # related to the data type of each of the components the message.
     SLOT_TYPES: tuple[rosidl_parser.definition.AbstractType, ...] = (
-        rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, *,
-                 deduction: typing.Optional[int] = None,  # noqa: E501
+                 deduction: typing.Optional[float] = None,  # noqa: E501
                  check_fields: typing.Optional[bool] = None) -> None:
         if check_fields is not None:
             self._check_fields = check_fields
         else:
             self._check_fields = ros_python_check_fields == '1'
-        self.deduction = deduction if deduction is not None else int()
+        self.deduction = deduction if deduction is not None else float()
 
     def __repr__(self) -> str:
         typename = self.__class__.__module__.split('.')
@@ -143,22 +145,22 @@ class Battery_Request(rosidl_pycommon.interface_base_classes.BaseMessage, metacl
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def deduction(self) -> int:
+    def deduction(self) -> float:
         """Message field 'deduction'."""
         return self._deduction
 
     @deduction.setter
-    def deduction(self, value: int) -> None:
+    def deduction(self, value: float) -> None:
 
         if self._check_fields:
             if False:  # Done for templating alignment
                 pass
             else:
                 assert \
-                    isinstance(value, int), \
-                    "The 'deduction' field must be of type 'int'"
-                assert value >= -2147483648 and value < 2147483648, \
-                    "The 'deduction' field must be an integer in [-2147483648, 2147483647]"
+                    isinstance(value, float), \
+                    "The 'deduction' field must be of type 'float'"
+                assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                    "The 'deduction' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
 
         self._deduction = value
 

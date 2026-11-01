@@ -6,3 +6,7 @@ from custom_msgs.srv._move import Move as Move  # noqa: F401
 from custom_msgs.srv._move import Move_Event as Move_Event  # noqa: F401
 from custom_msgs.srv._move import Move_Request as Move_Request  # noqa: F401
 from custom_msgs.srv._move import Move_Response as Move_Response  # noqa: F401
+from custom_msgs.srv._switch_mode import SwitchMode as SwitchMode  # noqa: F401
+from custom_msgs.srv._switch_mode import SwitchMode_Event as SwitchMode_Event  # noqa: F401
+from custom_msgs.srv._switch_mode import SwitchMode_Request as SwitchMode_Request  # noqa: F401
+from custom_msgs.srv._switch_mode import SwitchMode_Response as SwitchMode_Response  # noqa: F401

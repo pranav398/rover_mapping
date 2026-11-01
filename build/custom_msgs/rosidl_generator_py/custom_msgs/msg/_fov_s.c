@@ -68,6 +68,15 @@ bool custom_msgs__msg__fov__convert_from_py(PyObject * _pymsg, void * _ros_messa
     ros_message->y = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
+  {  // battery
+    PyObject * field = PyObject_GetAttrString(_pymsg, "battery");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->battery = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
   {  // fov_size
     PyObject * field = PyObject_GetAttrString(_pymsg, "fov_size");
     if (!field) {
@@ -75,6 +84,33 @@ bool custom_msgs__msg__fov__convert_from_py(PyObject * _pymsg, void * _ros_messa
     }
     assert(PyLong_Check(field));
     ros_message->fov_size = PyLong_AsUnsignedLong(field);
+    Py_DECREF(field);
+  }
+  {  // target_x
+    PyObject * field = PyObject_GetAttrString(_pymsg, "target_x");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->target_x = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // target_y
+    PyObject * field = PyObject_GetAttrString(_pymsg, "target_y");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->target_y = (int32_t)PyLong_AsLong(field);
+    Py_DECREF(field);
+  }
+  {  // target_rad
+    PyObject * field = PyObject_GetAttrString(_pymsg, "target_rad");
+    if (!field) {
+      return false;
+    }
+    assert(PyLong_Check(field));
+    ros_message->target_rad = (int32_t)PyLong_AsLong(field);
     Py_DECREF(field);
   }
   {  // height
@@ -325,6 +361,68 @@ bool custom_msgs__msg__fov__convert_from_py(PyObject * _pymsg, void * _ros_messa
     }
     Py_DECREF(field);
   }
+  {  // goal_cells
+    PyObject * field = PyObject_GetAttrString(_pymsg, "goal_cells");
+    if (!field) {
+      return false;
+    }
+    if (PyObject_CheckBuffer(field)) {
+      // Optimization for converting arrays of primitives
+      Py_buffer view;
+      int rc = PyObject_GetBuffer(field, &view, PyBUF_SIMPLE);
+      if (rc < 0) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = view.len / sizeof(bool);
+      if (!rosidl_runtime_c__boolean__Sequence__init(&(ros_message->goal_cells), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create boolean__Sequence ros_message");
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      bool * dest = ros_message->goal_cells.data;
+      rc = PyBuffer_ToContiguous(dest, &view, view.len, 'C');
+      if (rc < 0) {
+        PyBuffer_Release(&view);
+        Py_DECREF(field);
+        return false;
+      }
+      PyBuffer_Release(&view);
+    } else {
+      PyObject * seq_field = PySequence_Fast(field, "expected a sequence in 'goal_cells'");
+      if (!seq_field) {
+        Py_DECREF(field);
+        return false;
+      }
+      Py_ssize_t size = PySequence_Size(field);
+      if (-1 == size) {
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      if (!rosidl_runtime_c__boolean__Sequence__init(&(ros_message->goal_cells), size)) {
+        PyErr_SetString(PyExc_RuntimeError, "unable to create boolean__Sequence ros_message");
+        Py_DECREF(seq_field);
+        Py_DECREF(field);
+        return false;
+      }
+      bool * dest = ros_message->goal_cells.data;
+      for (Py_ssize_t i = 0; i < size; ++i) {
+        PyObject * item = PySequence_Fast_GET_ITEM(seq_field, i);
+        if (!item) {
+          Py_DECREF(seq_field);
+          Py_DECREF(field);
+          return false;
+        }
+        assert(PyBool_Check(item));
+        bool tmp = (item == Py_True);
+        memcpy(&dest[i], &tmp, sizeof(bool));
+      }
+      Py_DECREF(seq_field);
+    }
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -369,11 +467,55 @@ PyObject * custom_msgs__msg__fov__convert_to_py(void * raw_ros_message)
       }
     }
   }
+  {  // battery
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->battery);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "battery", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
   {  // fov_size
     PyObject * field = NULL;
     field = PyLong_FromUnsignedLong(ros_message->fov_size);
     {
       int rc = PyObject_SetAttrString(_pymessage, "fov_size", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // target_x
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->target_x);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "target_x", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // target_y
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->target_y);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "target_y", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // target_rad
+    PyObject * field = NULL;
+    field = PyLong_FromLong(ros_message->target_rad);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "target_rad", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -607,6 +749,28 @@ PyObject * custom_msgs__msg__fov__convert_to_py(void * raw_ros_message)
       Py_DECREF(ret);
     }
     Py_DECREF(field);
+  }
+  {  // goal_cells
+    PyObject * field = NULL;
+    size_t size = ros_message->goal_cells.size;
+    bool * src = ros_message->goal_cells.data;
+    field = PyList_New(size);
+    if (!field) {
+      return NULL;
+    }
+    for (size_t i = 0; i < size; ++i) {
+      int rc = PyList_SetItem(field, i, PyBool_FromLong(src[i] ? 1 : 0));
+      (void)rc;
+      assert(rc == 0);
+    }
+    assert(PySequence_Check(field));
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "goal_cells", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
   }
 
   // ownership of _pymessage is transferred to the caller

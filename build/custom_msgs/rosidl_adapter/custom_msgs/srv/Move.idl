@@ -10,7 +10,7 @@ module custom_msgs {
 
       int32 delta_y;
 
-      int32 deduction;
+      float deduction;
     };
     struct Move_Response {
       boolean accepted;

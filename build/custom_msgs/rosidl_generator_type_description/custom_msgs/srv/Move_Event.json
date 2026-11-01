@@ -87,7 +87,7 @@
           {
             "name": "deduction",
             "type": {
-              "type_id": 6,
+              "type_id": 10,
               "capacity": 0,
               "string_capacity": 0,
               "nested_type_name": ""
@@ -171,7 +171,7 @@
   "type_hashes": [
     {
       "type_name": "custom_msgs/srv/Move_Event",
-      "hash_string": "RIHS01_8f0b3330283dac775fcd115598af1db2f21031f922775b25d99aab9bc4e2a64e"
+      "hash_string": "RIHS01_bbd3b59f99398f3e887b05f1fefb4e74ba74cdedd5add41daec6f9d7cb2b04a8"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -179,7 +179,7 @@
     },
     {
       "type_name": "custom_msgs/srv/Move_Request",
-      "hash_string": "RIHS01_6be88e44f73f98b4f4bdf231482f8880a9a89426f9549cf081c33b4ecb874496"
+      "hash_string": "RIHS01_68b3db1a9c16ff619928ca631a6b838ff2df9a56d7a2112e781d5a3cc17a5f07"
     },
     {
       "type_name": "custom_msgs/srv/Move_Response",

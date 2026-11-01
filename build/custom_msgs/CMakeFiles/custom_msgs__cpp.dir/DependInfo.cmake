@@ -31,7 +31,12 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/move__struct.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/move__traits.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/move__type_support.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__builder.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__struct.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__traits.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/detail/switch_mode__type_support.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
   "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/move.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
+  "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/srv/switch_mode.hpp" "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_cpp/custom_msgs/msg/fov.hpp"
   )
 
 

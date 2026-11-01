@@ -11,10 +11,10 @@ custom_msgs__msg__Fov__get_type_hash(
 {
   (void)type_support;
   static rosidl_type_hash_t hash = {1, {
-      0x54, 0x01, 0x57, 0x2c, 0x11, 0x88, 0x31, 0xd3,
-      0x55, 0xe2, 0xde, 0x2c, 0x54, 0x5b, 0x22, 0xb6,
-      0x48, 0xe0, 0x45, 0x82, 0xb5, 0x16, 0x07, 0x21,
-      0xb4, 0x27, 0xa2, 0x69, 0x6f, 0x74, 0x31, 0x17,
+      0xa1, 0x56, 0x89, 0x98, 0x23, 0x56, 0xa0, 0x79,
+      0xe6, 0xe8, 0x8d, 0x0a, 0x91, 0x00, 0x85, 0x2b,
+      0x43, 0x85, 0x0a, 0xdf, 0x36, 0xb8, 0x18, 0x18,
+      0x01, 0x2f, 0x48, 0x36, 0x8e, 0x13, 0x47, 0x76,
     }};
   return &hash;
 }
@@ -33,11 +33,16 @@ static char custom_msgs__msg__Fov__TYPE_NAME[] = "custom_msgs/msg/Fov";
 // Define type names, field names, and default values
 static char custom_msgs__msg__Fov__FIELD_NAME__x[] = "x";
 static char custom_msgs__msg__Fov__FIELD_NAME__y[] = "y";
+static char custom_msgs__msg__Fov__FIELD_NAME__battery[] = "battery";
 static char custom_msgs__msg__Fov__FIELD_NAME__fov_size[] = "fov_size";
+static char custom_msgs__msg__Fov__FIELD_NAME__target_x[] = "target_x";
+static char custom_msgs__msg__Fov__FIELD_NAME__target_y[] = "target_y";
+static char custom_msgs__msg__Fov__FIELD_NAME__target_rad[] = "target_rad";
 static char custom_msgs__msg__Fov__FIELD_NAME__height[] = "height";
 static char custom_msgs__msg__Fov__FIELD_NAME__roughness[] = "roughness";
 static char custom_msgs__msg__Fov__FIELD_NAME__muddiness[] = "muddiness";
 static char custom_msgs__msg__Fov__FIELD_NAME__wetness[] = "wetness";
+static char custom_msgs__msg__Fov__FIELD_NAME__goal_cells[] = "goal_cells";
 
 static rosidl_runtime_c__type_description__Field custom_msgs__msg__Fov__FIELDS[] = {
   {
@@ -61,9 +66,49 @@ static rosidl_runtime_c__type_description__Field custom_msgs__msg__Fov__FIELDS[]
     {NULL, 0, 0},
   },
   {
+    {custom_msgs__msg__Fov__FIELD_NAME__battery, 7, 7},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_FLOAT,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
     {custom_msgs__msg__Fov__FIELD_NAME__fov_size, 8, 8},
     {
       rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_UINT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_msgs__msg__Fov__FIELD_NAME__target_x, 8, 8},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_msgs__msg__Fov__FIELD_NAME__target_y, 8, 8},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
+  {
+    {custom_msgs__msg__Fov__FIELD_NAME__target_rad, 10, 10},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_INT32,
       0,
       0,
       {NULL, 0, 0},
@@ -110,6 +155,16 @@ static rosidl_runtime_c__type_description__Field custom_msgs__msg__Fov__FIELDS[]
     },
     {NULL, 0, 0},
   },
+  {
+    {custom_msgs__msg__Fov__FIELD_NAME__goal_cells, 10, 10},
+    {
+      rosidl_runtime_c__type_description__FieldType__FIELD_TYPE_BOOLEAN_UNBOUNDED_SEQUENCE,
+      0,
+      0,
+      {NULL, 0, 0},
+    },
+    {NULL, 0, 0},
+  },
 };
 
 const rosidl_runtime_c__type_description__TypeDescription *
@@ -121,7 +176,7 @@ custom_msgs__msg__Fov__get_type_description(
   static const rosidl_runtime_c__type_description__TypeDescription description = {
     {
       {custom_msgs__msg__Fov__TYPE_NAME, 19, 19},
-      {custom_msgs__msg__Fov__FIELDS, 7, 7},
+      {custom_msgs__msg__Fov__FIELDS, 12, 12},
     },
     {NULL, 0, 0},
   };
@@ -134,11 +189,16 @@ custom_msgs__msg__Fov__get_type_description(
 static char toplevel_type_raw_source[] =
   "int32 x\n"
   "int32 y\n"
+  "float32 battery\n"
   "uint32 fov_size\n"
+  "int32 target_x\n"
+  "int32 target_y\n"
+  "int32 target_rad\n"
   "float32[] height\n"
   "float32[] roughness\n"
   "float32[] muddiness\n"
-  "float32[] wetness";
+  "float32[] wetness\n"
+  "bool[] goal_cells";
 
 static char msg_encoding[] = "msg";
 
@@ -152,7 +212,7 @@ custom_msgs__msg__Fov__get_individual_type_description_source(
   static const rosidl_runtime_c__type_description__TypeSource source = {
     {custom_msgs__msg__Fov__TYPE_NAME, 19, 19},
     {msg_encoding, 3, 3},
-    {toplevel_type_raw_source, 107, 107},
+    {toplevel_type_raw_source, 188, 188},
   };
   return &source;
 }

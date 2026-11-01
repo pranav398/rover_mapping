@@ -45,7 +45,11 @@ struct Fov_
     {
       this->x = 0l;
       this->y = 0l;
+      this->battery = 0.0f;
       this->fov_size = 0ul;
+      this->target_x = 0l;
+      this->target_y = 0l;
+      this->target_rad = 0l;
     }
   }
 
@@ -57,7 +61,11 @@ struct Fov_
     {
       this->x = 0l;
       this->y = 0l;
+      this->battery = 0.0f;
       this->fov_size = 0ul;
+      this->target_x = 0l;
+      this->target_y = 0l;
+      this->target_rad = 0l;
     }
   }
 
@@ -68,9 +76,21 @@ struct Fov_
   using _y_type =
     int32_t;
   _y_type y;
+  using _battery_type =
+    float;
+  _battery_type battery;
   using _fov_size_type =
     uint32_t;
   _fov_size_type fov_size;
+  using _target_x_type =
+    int32_t;
+  _target_x_type target_x;
+  using _target_y_type =
+    int32_t;
+  _target_y_type target_y;
+  using _target_rad_type =
+    int32_t;
+  _target_rad_type target_rad;
   using _height_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _height_type height;
@@ -83,6 +103,9 @@ struct Fov_
   using _wetness_type =
     std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>>;
   _wetness_type wetness;
+  using _goal_cells_type =
+    std::vector<bool, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<bool>>;
+  _goal_cells_type goal_cells;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -97,10 +120,34 @@ struct Fov_
     this->y = _arg;
     return *this;
   }
+  Type & set__battery(
+    const float & _arg)
+  {
+    this->battery = _arg;
+    return *this;
+  }
   Type & set__fov_size(
     const uint32_t & _arg)
   {
     this->fov_size = _arg;
+    return *this;
+  }
+  Type & set__target_x(
+    const int32_t & _arg)
+  {
+    this->target_x = _arg;
+    return *this;
+  }
+  Type & set__target_y(
+    const int32_t & _arg)
+  {
+    this->target_y = _arg;
+    return *this;
+  }
+  Type & set__target_rad(
+    const int32_t & _arg)
+  {
+    this->target_rad = _arg;
     return *this;
   }
   Type & set__height(
@@ -125,6 +172,12 @@ struct Fov_
     const std::vector<float, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<float>> & _arg)
   {
     this->wetness = _arg;
+    return *this;
+  }
+  Type & set__goal_cells(
+    const std::vector<bool, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<bool>> & _arg)
+  {
+    this->goal_cells = _arg;
     return *this;
   }
 
@@ -176,7 +229,19 @@ struct Fov_
     if (this->y != other.y) {
       return false;
     }
+    if (this->battery != other.battery) {
+      return false;
+    }
     if (this->fov_size != other.fov_size) {
+      return false;
+    }
+    if (this->target_x != other.target_x) {
+      return false;
+    }
+    if (this->target_y != other.target_y) {
+      return false;
+    }
+    if (this->target_rad != other.target_rad) {
       return false;
     }
     if (this->height != other.height) {
@@ -189,6 +254,9 @@ struct Fov_
       return false;
     }
     if (this->wetness != other.wetness) {
+      return false;
+    }
+    if (this->goal_cells != other.goal_cells) {
       return false;
     }
     return true;

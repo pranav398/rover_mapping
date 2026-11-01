@@ -11,3 +11,4 @@ custom_msgs/msg/_info.py
 custom_msgs/srv/__init__.py
 custom_msgs/srv/_battery.py
 custom_msgs/srv/_move.py
+custom_msgs/srv/_switch_mode.py

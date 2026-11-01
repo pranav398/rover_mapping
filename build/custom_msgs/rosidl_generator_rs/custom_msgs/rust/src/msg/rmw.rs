@@ -38,7 +38,27 @@ pub struct Fov {
 
     // This member is not documented.
     #[allow(missing_docs)]
+    pub battery: f32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
     pub fov_size: u32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub target_x: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub target_y: i32,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub target_rad: i32,
 
 
     // This member is not documented.
@@ -59,6 +79,11 @@ pub struct Fov {
     // This member is not documented.
     #[allow(missing_docs)]
     pub wetness: rosidl_runtime_rs::Sequence<f32>,
+
+
+    // This member is not documented.
+    #[allow(missing_docs)]
+    pub goal_cells: rosidl_runtime_rs::Sequence<bool>,
 
 }
 

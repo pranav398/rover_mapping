@@ -24,6 +24,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__functions.c.o.d"
   "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.o"
   "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c.o.d"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c.o.d"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c.o.d"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o"
+  "CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c.o.d"
   "libcustom_msgs__rosidl_generator_c.pdb"
   "libcustom_msgs__rosidl_generator_c.so"
   "rosidl_generator_c/custom_msgs/msg/detail/fov__description.c"
@@ -53,7 +59,14 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/custom_msgs/srv/detail/move__struct.h"
   "rosidl_generator_c/custom_msgs/srv/detail/move__type_support.c"
   "rosidl_generator_c/custom_msgs/srv/detail/move__type_support.h"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__description.c"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.c"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__functions.h"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__struct.h"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.c"
+  "rosidl_generator_c/custom_msgs/srv/detail/switch_mode__type_support.h"
   "rosidl_generator_c/custom_msgs/srv/move.h"
+  "rosidl_generator_c/custom_msgs/srv/switch_mode.h"
 )
 
 # Per-language clean rules from dependency scanning.

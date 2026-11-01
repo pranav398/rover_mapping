@@ -5,7 +5,8 @@
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Fov.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:msg/Info.idl",
     "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Battery.idl",
-    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Move.idl"
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/Move.idl",
+    "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_adapter/custom_msgs:srv/SwitchMode.idl"
   ],
   "include_paths": [
     "service_msgs:/opt/ros/lyrical/share/service_msgs/",

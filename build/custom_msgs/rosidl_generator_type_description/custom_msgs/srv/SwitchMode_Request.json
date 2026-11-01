@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "custom_msgs/srv/SwitchMode_Request",
+      "fields": [
+        {
+          "name": "mode",
+          "type": {
+            "type_id": 15,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "custom_msgs/srv/SwitchMode_Request",
+      "hash_string": "RIHS01_ef70aa83b1c748ff24f4bb7fe9a2f25386cc550f1a601d3f083216312264b658"
+    }
+  ]
+}

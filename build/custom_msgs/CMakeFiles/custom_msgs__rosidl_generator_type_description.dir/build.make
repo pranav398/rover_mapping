@@ -70,6 +70,7 @@ CMakeFiles/custom_msgs__rosidl_generator_type_description: rosidl_generator_type
 CMakeFiles/custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/msg/Info.json
 CMakeFiles/custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/Battery.json
 CMakeFiles/custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/Move.json
+CMakeFiles/custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json
 
 rosidl_generator_type_description/custom_msgs/msg/Fov.json: /opt/ros/lyrical/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/custom_msgs/msg/Fov.json: /opt/ros/lyrical/lib/python3.14/site-packages/rosidl_generator_type_description/__init__.py
@@ -77,6 +78,7 @@ rosidl_generator_type_description/custom_msgs/msg/Fov.json: rosidl_adapter/custo
 rosidl_generator_type_description/custom_msgs/msg/Fov.json: rosidl_adapter/custom_msgs/msg/Info.idl
 rosidl_generator_type_description/custom_msgs/msg/Fov.json: rosidl_adapter/custom_msgs/srv/Battery.idl
 rosidl_generator_type_description/custom_msgs/msg/Fov.json: rosidl_adapter/custom_msgs/srv/Move.idl
+rosidl_generator_type_description/custom_msgs/msg/Fov.json: rosidl_adapter/custom_msgs/srv/SwitchMode.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
 	/usr/bin/python3 /opt/ros/lyrical/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file "/run/media/pranav/Files/Education/IIT Bombay/MRT/rover_mapping/build/custom_msgs/rosidl_generator_type_description__arguments.json"
 
@@ -89,6 +91,9 @@ rosidl_generator_type_description/custom_msgs/srv/Battery.json: rosidl_generator
 rosidl_generator_type_description/custom_msgs/srv/Move.json: rosidl_generator_type_description/custom_msgs/msg/Fov.json
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/custom_msgs/srv/Move.json
 
+rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json: rosidl_generator_type_description/custom_msgs/msg/Fov.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json
+
 CMakeFiles/custom_msgs__rosidl_generator_type_description.dir/codegen:
 .PHONY : CMakeFiles/custom_msgs__rosidl_generator_type_description.dir/codegen
 
@@ -97,6 +102,7 @@ custom_msgs__rosidl_generator_type_description: rosidl_generator_type_descriptio
 custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/msg/Info.json
 custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/Battery.json
 custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/Move.json
+custom_msgs__rosidl_generator_type_description: rosidl_generator_type_description/custom_msgs/srv/SwitchMode.json
 custom_msgs__rosidl_generator_type_description: CMakeFiles/custom_msgs__rosidl_generator_type_description.dir/build.make
 .PHONY : custom_msgs__rosidl_generator_type_description
 

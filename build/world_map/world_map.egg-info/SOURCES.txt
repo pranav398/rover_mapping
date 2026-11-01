@@ -13,8 +13,10 @@ launch/map.launch.py
 resource/world_map
 world_map/__init__.py
 world_map/battery_node.py
+world_map/explore_node.py
 world_map/map_node.py
 world_map/py.typed
+world_map/switch_mode_client.py
 world_map.egg-info/PKG-INFO
 world_map.egg-info/SOURCES.txt
 world_map.egg-info/dependency_links.txt

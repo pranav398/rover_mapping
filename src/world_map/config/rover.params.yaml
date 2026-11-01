@@ -2,10 +2,14 @@ map_node:
   ros__parameters:
     length: 100
     width: 100
-    spawn_x: 50
-    spawn_y: 30
     fov: 5
+    target_rad: 5
 
 battery_node:
   ros__parameters:
-    max_battery: 100
+    max_battery: 100.0
+
+explore_node:
+  ros__parameters:
+    length: 100
+    width: 100

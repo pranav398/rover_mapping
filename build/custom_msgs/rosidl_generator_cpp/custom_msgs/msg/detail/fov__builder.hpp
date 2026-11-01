@@ -24,16 +24,32 @@ namespace msg
 namespace builder
 {
 
+class Init_Fov_goal_cells
+{
+public:
+  explicit Init_Fov_goal_cells(::custom_msgs::msg::Fov & msg)
+  : msg_(msg)
+  {}
+  ::custom_msgs::msg::Fov goal_cells(::custom_msgs::msg::Fov::_goal_cells_type arg)
+  {
+    msg_.goal_cells = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Fov msg_;
+};
+
 class Init_Fov_wetness
 {
 public:
   explicit Init_Fov_wetness(::custom_msgs::msg::Fov & msg)
   : msg_(msg)
   {}
-  ::custom_msgs::msg::Fov wetness(::custom_msgs::msg::Fov::_wetness_type arg)
+  Init_Fov_goal_cells wetness(::custom_msgs::msg::Fov::_wetness_type arg)
   {
     msg_.wetness = std::move(arg);
-    return std::move(msg_);
+    return Init_Fov_goal_cells(msg_);
   }
 
 private:
@@ -88,16 +104,80 @@ private:
   ::custom_msgs::msg::Fov msg_;
 };
 
+class Init_Fov_target_rad
+{
+public:
+  explicit Init_Fov_target_rad(::custom_msgs::msg::Fov & msg)
+  : msg_(msg)
+  {}
+  Init_Fov_height target_rad(::custom_msgs::msg::Fov::_target_rad_type arg)
+  {
+    msg_.target_rad = std::move(arg);
+    return Init_Fov_height(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Fov msg_;
+};
+
+class Init_Fov_target_y
+{
+public:
+  explicit Init_Fov_target_y(::custom_msgs::msg::Fov & msg)
+  : msg_(msg)
+  {}
+  Init_Fov_target_rad target_y(::custom_msgs::msg::Fov::_target_y_type arg)
+  {
+    msg_.target_y = std::move(arg);
+    return Init_Fov_target_rad(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Fov msg_;
+};
+
+class Init_Fov_target_x
+{
+public:
+  explicit Init_Fov_target_x(::custom_msgs::msg::Fov & msg)
+  : msg_(msg)
+  {}
+  Init_Fov_target_y target_x(::custom_msgs::msg::Fov::_target_x_type arg)
+  {
+    msg_.target_x = std::move(arg);
+    return Init_Fov_target_y(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Fov msg_;
+};
+
 class Init_Fov_fov_size
 {
 public:
   explicit Init_Fov_fov_size(::custom_msgs::msg::Fov & msg)
   : msg_(msg)
   {}
-  Init_Fov_height fov_size(::custom_msgs::msg::Fov::_fov_size_type arg)
+  Init_Fov_target_x fov_size(::custom_msgs::msg::Fov::_fov_size_type arg)
   {
     msg_.fov_size = std::move(arg);
-    return Init_Fov_height(msg_);
+    return Init_Fov_target_x(msg_);
+  }
+
+private:
+  ::custom_msgs::msg::Fov msg_;
+};
+
+class Init_Fov_battery
+{
+public:
+  explicit Init_Fov_battery(::custom_msgs::msg::Fov & msg)
+  : msg_(msg)
+  {}
+  Init_Fov_fov_size battery(::custom_msgs::msg::Fov::_battery_type arg)
+  {
+    msg_.battery = std::move(arg);
+    return Init_Fov_fov_size(msg_);
   }
 
 private:
@@ -110,10 +190,10 @@ public:
   explicit Init_Fov_y(::custom_msgs::msg::Fov & msg)
   : msg_(msg)
   {}
-  Init_Fov_fov_size y(::custom_msgs::msg::Fov::_y_type arg)
+  Init_Fov_battery y(::custom_msgs::msg::Fov::_y_type arg)
   {
     msg_.y = std::move(arg);
-    return Init_Fov_fov_size(msg_);
+    return Init_Fov_battery(msg_);
   }
 
 private:
