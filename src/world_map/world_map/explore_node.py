@@ -4,6 +4,7 @@ from custom_msgs.msg import Fov
 from custom_msgs.srv import Move, SwitchMode
 import math
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 from matplotlib.colors import ListedColormap
 import numpy as np
 
@@ -24,6 +25,7 @@ class ExploreNode(Node):
         self.battery = None
         self.destination = None
         self.radius = None
+        self.spawn_position = None
         self.goal_position = None
         self.fov_received = False
         self.move_pending = False
@@ -116,6 +118,8 @@ class ExploreNode(Node):
 
         self.x = msg.x
         self.y = msg.y
+        if self.spawn_position is None:
+            self.spawn_position = (msg.x, msg.y)
         self.battery = msg.battery
         self.fov = fov
         self.destination = target
@@ -170,13 +174,68 @@ class ExploreNode(Node):
             markersize=12,
             markeredgecolor='white',
             markeredgewidth=0.8,
+            label='Rover',
         )
+        self.target_marker, = self.explored_axes.plot(
+            [],
+            [],
+            marker='*',
+            color='red',
+            markersize=16,
+            markeredgecolor='white',
+            markeredgewidth=0.8,
+            label='Target',
+        )
+        self.goal_marker, = self.explored_axes.plot(
+            [],
+            [],
+            marker='*',
+            color='green',
+            markersize=16,
+            markeredgecolor='white',
+            markeredgewidth=0.8,
+            label='Goal',
+        )
+        self.spawn_marker, = self.explored_axes.plot(
+            [],
+            [],
+            marker='*',
+            color='blue',
+            markersize=16,
+            markeredgecolor='white',
+            markeredgewidth=0.8,
+            label='Spawn',
+        )
+        self.target_square = None
+        self.explored_axes.legend(loc='upper right')
         self.explored_figure.tight_layout()
         plt.show(block=False)
 
     def updateExploredMap(self):
         self.explored_image.set_data(np.asarray(self.explored, dtype=np.uint8))
         self.rover_marker.set_data([self.y], [self.x])
+        target_x, target_y = self.destination
+        self.target_marker.set_data([target_y], [target_x])
+        if self.goal_position is None:
+            self.goal_marker.set_data([], [])
+        else:
+            goal_x, goal_y = self.goal_position
+            self.goal_marker.set_data([goal_y], [goal_x])
+        if self.spawn_position is None:
+            self.spawn_marker.set_data([], [])
+        else:
+            spawn_x, spawn_y = self.spawn_position
+            self.spawn_marker.set_data([spawn_y], [spawn_x])
+        if self.target_square is None:
+            self.target_square = Rectangle(
+                (target_y - self.radius - 0.5, target_x - self.radius - 0.5),
+                2 * self.radius + 1,
+                2 * self.radius + 1,
+                fill=False,
+                edgecolor='red',
+                linewidth=2,
+            )
+            self.explored_axes.add_patch(self.target_square)
         self.explored_figure.canvas.draw_idle()
 
     def processGuiEvents(self):

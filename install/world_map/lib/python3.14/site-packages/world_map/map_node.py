@@ -58,25 +58,19 @@ class MapNode(Node):
             raise ValueError('Target square must fit entirely inside the map')
 
         radius = self.target_rad
-        max_offset = math.ceil(2.0 * radius)
+        max_offset = math.ceil(5.0 * radius)
         for _ in range(10000):
             self.goal_x = random.randrange(self.length)
             self.goal_y = random.randrange(self.width)
-            valid_target_x = range(
-                max(radius, self.goal_x - radius),
-                min(self.length - radius - 1, self.goal_x + radius) + 1,
-            )
-            valid_target_y = range(
-                max(radius, self.goal_y - radius),
-                min(self.width - radius - 1, self.goal_y + radius) + 1,
-            )
-            if (
-                valid_target_x.start >= valid_target_x.stop
-                or valid_target_y.start >= valid_target_y.stop
-            ):
+            valid_target_x = range(max(radius, self.goal_x - radius), min(self.length - radius - 1, self.goal_x + radius) + 1,)
+            valid_target_y = range(max(radius, self.goal_y - radius), min(self.width - radius - 1, self.goal_y + radius) + 1,)
+            
+            if valid_target_x.start >= valid_target_x.stop or valid_target_y.start >= valid_target_y.stop:
                 continue
+
             self.target_x = random.choice(valid_target_x)
             self.target_y = random.choice(valid_target_y)
+            
             if self.wetness[self.goal_x][self.goal_y] > 0.8:
                 continue
 
@@ -84,17 +78,14 @@ class MapNode(Node):
             for dx in range(-max_offset, max_offset + 1):
                 for dy in range(-max_offset, max_offset + 1):
                     distance = max(abs(dx), abs(dy)) + (math.sqrt(2) - 1) * min(abs(dx), abs(dy))
-                    if not 1.5 * radius <= distance <= 2.0 * radius:
+                    if not 4.0 * radius <= distance <= 5.0 * radius:
                         continue
 
                     spawn_x = self.goal_x + dx
                     spawn_y = self.goal_y + dy
                     if not (0 <= spawn_x < self.length and 0 <= spawn_y < self.width):
                         continue
-                    if (
-                        abs(spawn_x - self.target_x) <= radius
-                        and abs(spawn_y - self.target_y) <= radius
-                    ):
+                    if abs(spawn_x - self.target_x) <= radius and abs(spawn_y - self.target_y) <= radius:
                         continue
                     if self.wetness[spawn_x][spawn_y] > 0.8:
                         continue
@@ -334,7 +325,3 @@ def main():
     finally:
         node.destroy_node()
         rclpy.try_shutdown()
-
-
-if __name__ == '__main__':
-    main()
